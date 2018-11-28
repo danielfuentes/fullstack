@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head><title> Ejemplo del evento onLoad</title>
+</head>
+<body language=JavaScript onLoad="window_onload()">
+
+<form NAME="form1">
+    <P>Dentro del Primer formulario</P>
+</form>
+
+<form NAME="form2">
+    <P>Dentro del Segundo formulario</P>
+</form>
+
+<form NAME="form3">
+    <P>Dentro del Tercer formulario</P>
+</form>
+
+<script>
+    function window_onload() {
+        var numberForms = document.forms.length;
+        var formIndex;
+        for (formIndex = 0; formIndex < numberForms; formIndex++) {
+            alert(document.forms[formIndex].name);
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<!--
+breadcrumb significa "migas de pan" y su nombre tiene origen en el cuento de "pulgarcito" donde dicho personaje dejaba migas de pan para recordar el camino de regreso.
+
+En la web breadrumb son una lista de enlaces jerárquicos desde la página principal hasta la página que estamos visitando. Por ejemplo un "breadrumb" de un sitio le lenguajes de programación podría ser:
+bootstrap 4 breadcrumb
+
+Con esto estamos significando que la página principal es "Diseño web", dentro de esta hay una sección "CSS" y finalmente la página donde nos encontramos es "Bootstrap 4".
+
+Como vemos la sección actual no es un hipervínculo y las otras si lo son para que fácilmente el usuario pueda regresar a la sección principal o subsecciones.
+
+Veamos un "breadcrumb" implementado con Bootstrap 4:
+-->
+<html>
+<head>
+  <title>Componente : breadcrumb</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Diseño web</a></li>
+      <li class="breadcrumb-item"><a href="#">CSS</a></li>
+      <li class="breadcrumb-item active">Bootstrap 4</li>
+    </ol>
+  </div>
+</body>
+</html>

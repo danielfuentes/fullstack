@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eventos: focus y blur</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+  <input type="text" id="text1" name="text1" size="30">
+  <br>
+  <input type="text" id="text2" name="text2" size="30">
+  
+<script>
+  addEventListener('load',inicio,false);
+
+  function inicio()
+  {
+    document.getElementById('text1').addEventListener('focus',tomarfoco1,false);
+    document.getElementById('text2').addEventListener('focus',tomarfoco2,false);
+    document.getElementById('text1').addEventListener('blur',perderfoco1,false);
+    document.getElementById('text2').addEventListener('blur',perderfoco2,false);
+  }
+
+  function tomarfoco1()
+  {
+    document.getElementById('text1').style.color='#ff0000';
+  }
+
+  function tomarfoco2()
+  {
+    document.getElementById('text2').style.color='#ff0000';
+  }
+
+  function perderfoco1()
+  {
+    document.getElementById('text1').style.color='#000000';
+  }
+
+  function perderfoco2()
+  {
+    document.getElementById('text2').style.color='#000000';
+  }
+</script>
+  
+</body>
+</html>

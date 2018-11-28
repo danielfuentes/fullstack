@@ -1,0 +1,130 @@
+<!doctype html>
+<!--
+Dentro del cuerpo de un diálogo modal podemos utilizar todo lo que conocemos del sistema de grillas que propone Bootstrap 4.
+
+La única consideración que tenemos que tener es que el contenedor debe de ser de tipo fluido, es decir "container-fluid".
+Problema
+
+Crear una página con dos botones, el primero debe abrir diálogo modal que muestre en su interior dos tarjetas con imágenes y el segundo botón debe abrir un diálogo para hacer el login.
+-->
+<html>
+<head>
+  <title>Componente : modal (grillas dentro de diálogos)</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container"> 
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dialogo1">Abrir diálogo con tarjetas</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dialogo2">Abrir diálogo con un formulario</button>    
+
+    <div class="modal fade" id="dialogo1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+    
+          <!-- cabecera del diálogo -->
+          <div class="modal-header">
+            <h4 class="modal-title">Título del diálogo</h4>
+            <button type="button" class="close" data-dismiss="modal">X</button>
+          </div>
+    
+          <!-- cuerpo del diálogo -->
+          <div class="modal-body">
+              <div class="container-fluid">   
+                  <div class="row">       
+                    <div class="col">        
+                        <div class="card">
+                          <img class="card-img-top" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro1.jpg">            
+                          <div class="card-body">
+                            <h4 class="card-title">Titulo de la tarjeta 1</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus sem, 
+                                                  tempor vitae mattis malesuada, ornare sed erat. Pellentesque nulla dui, congue
+                                                  nec tortor sit amet, maximus mattis dui. </p>
+                          </div>
+                        </div>          
+                    </div>
+              
+                    <div class="col">        
+                        <div class="card">
+                          <img class="card-img-top" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro2.jpg">                        
+                          <div class="card-body">
+                            <h4 class="card-title">Titulo de la tarjeta 2</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus sem, 
+                                                  tempor vitae mattis malesuada, ornare sed erat. Pellentesque nulla dui, congue
+                                                  nec tortor sit amet, maximus mattis dui. </p>
+                          </div>
+                        </div>          
+                    </div>
+                    
+                  </div>
+                </div>            
+          </div>
+    
+          <!-- pie del diálogo -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+    
+        </div>
+      </div>
+    </div> 
+
+    <div class="modal fade" id="dialogo2">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+      
+            <!-- cabecera del diálogo -->
+            <div class="modal-header">
+              <h4 class="modal-title">Título del diálogo</h4>
+              <button type="button" class="close" data-dismiss="modal">X</button>
+            </div>
+      
+            <!-- cuerpo del diálogo -->
+            <div class="modal-body">
+                <div class="container-fluid">   
+                    <form>
+                        <div class="form-group row">
+                          <label for="usuario" class="col-lg-3 col-form-label">Nombre de usuario:</label>
+                          <div class="col-lg-9">
+                            <input type="text" class="form-control" id="usuario">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="clave" class="col-lg-3 col-form-label">Ingrese clave:</label>
+                          <div class="col-lg-9">
+                            <input type="password" class="form-control" id="clave">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="offset-lg-3 col-lg-9">
+                            <button type="submit" class="btn btn-default">Entrar</button>
+                          </div> 
+                        </div>
+                      </form>                    
+                </div>            
+            </div>
+      
+            <!-- pie del diálogo -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+      
+          </div>
+        </div>
+      </div> 
+
+  </div>
+  <!-- jQuery -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+<!--
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  -->
+</body>
+</html>

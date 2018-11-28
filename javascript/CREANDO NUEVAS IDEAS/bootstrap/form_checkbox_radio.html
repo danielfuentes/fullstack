@@ -1,0 +1,132 @@
+<!doctype html>
+<!--
+Veamos como trabajamos con otros dos controles muy usados en los formulario web como son los controles checkbox y radio.
+
+Podemos hacer que los controles aparezcan uno debajo del otro o uno al lado del otro.
+
+Para que aparezcan uno debajo de otro tenemos la siguiente sintaxis:
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkbox1" name="checkbox1">
+            <label class="form-check-label" for="checkbox1">
+              Opcion 1
+            </label>
+        </div>
+
+Debemos envolver en un div con la clase "form-check" y dentro definir el control "input" con la clase "form-check-input".
+
+La etiqueta label que hace referencia al checkbox o radio debe iniciarse con la clase "form-check-label".
+
+Si queremos que los checkbox o radio se muestren uno al lado de otro debemos agregar la clase "form-check-inline" al div contenedor:
+
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="checkbox4" name="checkbox4">
+            <label class="form-check-label" for="checkbox4">
+              Opcion 1
+            </label>
+        </div>
+
+Problema
+
+Confeccionar un formulario que muestre tres checkbox un debajo del otro, tres radio también uno debajo del otro, seguidamente tres checkbox uno al lado del otro (en la misma fila) y por último tres radio uno al lado del otro.
+-->
+<html>
+<head>
+  <title>form : controles checkbox y radio</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+      <h1>En distintas filas</h1>      
+      <form>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkbox1" name="checkbox1">
+            <label class="form-check-label" for="checkbox1">
+              Opcion 1
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkbox2" name="checkbox2">
+            <label class="form-check-label" for="checkbox2">
+              Opcion 2
+            </label>
+        </div>        
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkbox3" name="checkbox3">
+            <label class="form-check-label" for="checkbox3">
+              Opcion 3
+            </label>
+        </div>        
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="" id="radio1" name="grupo1">
+            <label class="form-check-label" for="radio1">
+              Opcion 1
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="" id="radio2" name="grupo1">
+            <label class="form-check-label" for="radio2">
+              Opcion 2
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="" id="radio3" name="grupo1">
+            <label class="form-check-label" for="radio1">
+              Opcion 3
+            </label>
+        </div>
+        
+        <button type="submit" class="btn btn-default">Enviar</button> 
+        
+      </form>
+
+      <h1>En la misma fila</h1>      
+      <form>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="checkbox4" name="checkbox4">
+            <label class="form-check-label" for="checkbox4">
+              Opcion 1
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="checkbox5" name="checkbox5">
+            <label class="form-check-label" for="checkbox5">
+              Opcion 2
+            </label>
+        </div>        
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="checkbox3" name="checkbox6">
+            <label class="form-check-label" for="checkbox6">
+              Opcion 3
+            </label>
+        </div>        
+        <br> 
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" value="" id="radio4" name="grupo2">
+            <label class="form-check-label" for="radio4">
+              Opcion 1
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" value="" id="radio5" name="grupo2">
+            <label class="form-check-label" for="radio5">
+              Opcion 2
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" value="" id="radio6" name="grupo2">
+            <label class="form-check-label" for="radio6">
+              Opcion 3
+            </label>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-default">Enviar</button> 
+        
+      </form>
+      
+    </div>
+</body>
+</html>

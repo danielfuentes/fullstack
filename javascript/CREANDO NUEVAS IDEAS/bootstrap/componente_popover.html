@@ -1,0 +1,57 @@
+<!doctype html>
+<!--
+La componente Popover es similar a Tooltips con la diferencia que su contenido se presenta cuando se hace clic generalmente sobre un ancla.
+
+Para trabajar con esta componente además de importar todos los archivos CSS y Javascript debemos agregar también la llamada desde jQuery:
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+});
+</script>
+
+Podemos posicionar el Popover asignando un valor a la propiedad 'data-placement':
+
+top
+bottom
+left
+right
+
+Un ejemplo para conocer su sintaxis:
+-->
+<html>
+<head>
+  <title>Componente : Popover</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <a href="#" data-toggle="popover" title="Historia de Google" data-trigger="focus"
+       data-content="Larry Page y Sergey Brin comenzaron Google como un proyecto universitario en enero de 1996 cuando ambos eran estudiantes de posgrado en ciencias de la computación en la Universidad de Stanford.">Google</a>
+    <a href="#" data-toggle="popover" title="Historia de Yahoo" data-trigger="focus"
+       data-content="Yahoo! inicialmente recibió el nombre de 'ulices b' (La guía de Jerry para la World Wide Web), Su nombre proviene de unos personajes del libro Los viajes de Gulliver">Yahoo</a>
+    <a href="#" data-toggle="popover" title="Historia de Bing" data-trigger="focus"
+       data-content="Bing (anteriormente Live Search, Windows Live Search y MSN Search) es un buscador web de Microsoft. Presentado por el antiguo director ejecutivo de Microsoft, Steve Ballmer, el 28 de mayo de 2009">Bing</a>
+  </div>  
+   <!-- jQuery -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+<!--
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  -->
+  <script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+    </script>
+</body>
+</html>

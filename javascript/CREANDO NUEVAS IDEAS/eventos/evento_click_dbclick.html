@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eventos: click y dblclick</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+  <div style="width:200px;height:200px;background:#ffff00" id="recuadro1">
+    Prueba del evento click
+  </div>
+  <div style="width:200px;height:200px;background:#ff5500" id="recuadro2">
+    Prueba del evento dblclick
+  </div>  
+
+<script>
+  addEventListener('load',inicio,false);
+
+  function inicio()
+  {
+    document.getElementById('recuadro1').addEventListener('click',presion1,false);
+    document.getElementById('recuadro2').addEventListener('dblclick',presion2,false);
+  }
+
+  function presion1()
+  {
+    alert('se hizo click');
+  }
+
+  function presion2()
+  {
+    alert('se hizo doble click');
+  }
+</script>
+  
+</body>
+</html>

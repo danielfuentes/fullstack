@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Busca la letra de tu musica preferida</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Tu música preferida</h1>
+      </div>
+      <form class="" action="index.html" method="post">
+        <div class="form-group">
+          <label for="">Artista</label>
+          <input id="artista" type="text" name="artista" value="" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="">Canción</label>
+          <input id="cancion" type="text" name="cancion" value="" class="form-control">
+        </div>
+        <div class="form-group">
+          <button id="buscar" type="button" name="button" class="btn btn-primary">
+            Buscar
+          </button>
+        </div>
+      </form>
+      <img id="loading" src="https://media.giphy.com/media/jAYUbVXgESSti/giphy.gif" alt="" width=150 style="display:none;">
+      <p id="lyrics"></p>
+
+    </div>
+  </body>
+</html>

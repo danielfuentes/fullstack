@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Ejemplo del evento preventDefault</title>
+</head>
+<body>
+
+<a id="google" href="http://www.google.com">Ir a Google</a>
+
+<script>
+    var enlace = document.getElementById("google")
+    enlace.addEventListener("click", function(e){
+        e.preventDefault(); // el link ya no irá a google
+        window.location.href = "http://facebook.com";
+    });
+</script>
+</body>
+</html>

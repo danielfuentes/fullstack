@@ -1,0 +1,69 @@
+<!doctype html>
+<!--
+Una funcionalidad más compleja que podemos utilizar para los menús con pestañas o píldoras es asociarle un div con contenido.
+
+Solo se muestra la información de la opción seleccionada. Mediante Javascript Bootstrap 4 resuelve el problema de hacer visible el div de la opción que se selecciona y ocultar la otra.
+
+Veamos un ejemplo con tres pestañas que muestran distintos contenidos al ser presionados:
+-->
+<html>
+<head>
+  <title>Componente : nav (con contenido para cada opción)</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <ul class="nav nav-tabs mt-3">
+      <li class="nav-item">
+        <a class="nav-link active"  data-toggle="tab" href="#opcion1" >Opción 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  data-toggle="tab" href="#opcion2">Opción 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  data-toggle="tab" href="#opcion3">Opción 3</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="opcion1">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vestibulum magna vitae
+      lectus iaculis ultricies. Donec nibh massa, ornare eget diam et, mattis sodales augue. 
+      Etiam tempus turpis id tellus vehicula egestas efficitur a nisi. Pellentesque eget justo
+      tellus. Vivamus hendrerit leo neque, et sagittis lorem blandit sed. Cras fringilla lorem
+      libero, a tempus lorem iaculis ut. Mauris ex purus, porta vitae tristique consectetur, 
+      posuere quis nibh. In ut laoreet nisi. Etiam elementum eget justo in hendrerit. Morbi ut
+      orci a nisi porta vulputate non a libero. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Praesent malesuada lorem arcu, convallis scelerisque turpis dignissim quis.
+      </div>
+      <div class="tab-pane fade" id="opcion2" >
+      Cras non purus urna. Vestibulum nec felis felis. Quisque luctus vehicula ipsum,
+      id pellentesque nulla luctus at. Maecenas ut sodales velit. Sed orci leo, consequat
+      in lacus ac, pulvinar ullamcorper ex. Cras vulputate vel tortor eget posuere.
+      Quisque sit amet metus sed urna ultrices placerat eu a nunc.
+      </div>
+      <div class="tab-pane fade" id="opcion3">
+      Etiam congue, metus eu ultricies euismod, est magna condimentum sem, eget commodo
+      elit nisl id sapien. Proin sodales accumsan nulla non molestie. Nulla tempus
+      congue arcu, a sagittis ante dapibus vitae. Proin tincidunt tincidunt accumsan.
+      Morbi pretium venenatis tempor. Sed sollicitudin ante odio, non commodo eros 
+      egestas et. Nulla efficitur eros non quam vestibulum feugiat. Aliquam libero magna,
+      dignissim id dapibus eget, posuere eu nibh.
+      </div>
+    </div>
+  </div>
+   <!-- jQuery -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+  <!--
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+  -->
+</body>
+</html>

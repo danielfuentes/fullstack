@@ -1,0 +1,30 @@
+<!doctype html>
+<!--
+Hasta ahora hemos visto que todos los controles se ubican uno debajo de otro (que será lo más común), pero hay situaciones que podemos necesitar que haya varios controles de distinto tipo en la misma línea, en estos casos Bootstrap 4 nos proporciona una clase que debemos asignársela a la marca form llamada "form-inline".
+
+Veamos un ejemplo donde disponemos tres controles en una misma línea:
+-->
+<html>
+<head>
+  <title>form : formulario en una línea</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Prueba de formularios en línea con Bootstrap 4</h1>
+    <form class="form-inline">
+      <label for="mail" class="mr-sm-2">mail:</label>
+      <input type="email" class="form-control mr-sm-2" id="mail">
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input mr-sm-2"> Acepta términos
+        </label>
+      </div>
+      <button type="submit" class="btn btn-default ml-sm-2">Entrar</button>
+    </form>
+  
+  </div> 
+</body>
+</html>

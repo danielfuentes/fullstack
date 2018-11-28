@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<p>Este ejemplo usa el método addEventListener() para adjuntar un evento onchange a un elemento input</p>
+
+Nombre: <input type="text" id="fname">
+
+<p>Cuando sales del input, se invoca a una función la cual transforma el texto ingresado a mayúsculas.</p>
+
+<script>
+    var campoNombre = document.getElementById("fname");
+    campoNombre.addEventListener("change", aMayusculas);
+
+    function aMayusculas() {
+        var x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+    }
+</script>
+
+</body>
+</html>

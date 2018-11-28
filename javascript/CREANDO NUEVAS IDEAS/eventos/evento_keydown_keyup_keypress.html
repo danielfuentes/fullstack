@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eventos: keydown, keyup y keypress</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+  <input type="text" id="texto" maxlength="140" size="140">
+  <br>
+  <p>Máxima cantidad de caracteres disponibles:<span id="cantidad">140</span></p>
+
+<script>
+  addEventListener('load',inicio,false);
+
+  function inicio()
+  {
+    document.getElementById('texto').addEventListener('keyup',presion,false);
+  }
+
+  function presion()
+  {
+    var canti=document.getElementById('texto').value.length;
+    var disponibles=140-parseInt(canti);
+    document.getElementById('cantidad').innerHTML=disponibles;
+  }
+</script>
+  
+</body>
+</html>

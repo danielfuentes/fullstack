@@ -1,0 +1,103 @@
+<!doctype html>
+<!--Lo más importante de entender en un principio es el sistema de grillas que plantea la librería Bootstrap.
+
+Debemos pensar para armar nuestro esquema de la página que tenemos la posibilidad de definir filas y en cada fila definir de 1 hasta 12 columnas. Cada columna con un ancho relativo a ese número 12.
+
+Luego Bootstrap se encarga de colapsar las columnas cuando se accede al sitio desde un dispositivo con una capacidad limitada en cuanto al ancho en píxeles (esto permite una experiencia más placentera al visitante que accede a nuestra página desde un celular con capacidades limitadas)
+
+Para ver y entender como creamos las columnas en cada fila y como colapsan según el ancho del dispositivo podemos analizar el siguiente código:-->
+<html>
+<head>
+  <title>Sistema de grillas de Bootstrap 4</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet"> 
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-4"  style="background-color:#aaa">
+        <h1>Columna 1</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-xl-4"  style="background-color:#bbb">
+        <h1>Columna 2</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-xl-4"  style="background-color:#ccc">
+        <h1>Columna 3</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+    </div>
+
+    <hr>
+  
+    <div class="row">
+      <div class="col-lg-4"  style="background-color:#aaa">
+        <h1>Columna 1</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-lg-4"  style="background-color:#bbb">
+        <h1>Columna 2</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-lg-4"  style="background-color:#ccc">
+        <h1>Columna 3</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-md-4"  style="background-color:#aaa">
+        <h1>Columna 1</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-md-4"  style="background-color:#bbb">
+        <h1>Columna 2</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-md-4"  style="background-color:#ccc">
+        <h1>Columna 3</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-sm-4"  style="background-color:#aaa">
+        <h1>Columna 1</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-sm-4"  style="background-color:#bbb">
+        <h1>Columna 2</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-sm-4"  style="background-color:#ccc">
+        <h1>Columna 3</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-4"  style="background-color:#aaa">
+        <h1>Columna 1</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-4"  style="background-color:#bbb">
+        <h1>Columna 2</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+      <div class="col-4"  style="background-color:#ccc">
+        <h1>Columna 3</h1> 
+        <p>Esto es una prueba de bootstrap.</p>
+      </div>
+    </div>
+
+  </div> 
+</body>
+</html>

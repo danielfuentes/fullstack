@@ -1,0 +1,35 @@
+<!doctype html>
+<!--
+Con Bootstrap 4 se ha agregado la posibilidad de que en una fila definida por la clase "row" especifique varias columnas y mediante la clase "w-100" permitir hacer un salto de línea.
+
+Con un ejemplo debe quedar claro como podemos definir varias líneas en una misma fila:
+-->
+<html>
+<head>
+  <title>Varias líneas en una misma fila "row"</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+ <div class="container">
+    
+    <div class="row">
+      <div class="col-3"  style="background-color:#aaa">
+        <h1>Columna 1 <br> Linea 1</h1> 
+      </div>
+      <div class="col-6"  style="background-color:#bbb">
+        <h1>Columna 2 <br> Linea 1</h1> 
+      </div>
+      <div class="w-100"></div>
+      <div class="col-6"  style="background-color:#aaa">
+        <h1>Columna 1 <br>Linea 2</h1> 
+      </div>
+      <div class="col-6"  style="background-color:#bbb">
+        <h1>Columna 2 <br>Linea 2</h1> 
+      </div>      
+    </div>  
+
+  </div> 
+</body>
+</html>

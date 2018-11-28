@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<p>Haz clic en el botón para esperar 3 segundos y luego mostrar el alerta "Hola".</p>
+
+<button>Click</button>
+
+<script>
+    var boton = document.querySelector("button");
+
+    boton.addEventListener("click", myFunction);
+
+    
+
+    function myFunction() {
+        setInterval(alertFunc, 3000);
+    }
+
+    function alertFunc() {
+        alert("Hola!");
+    }
+</script>
+
+</body>
+</html>

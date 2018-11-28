@@ -1,0 +1,57 @@
+<!doctype html>
+<!--
+Otra variante que podemos implementar con las tarjetas de Bootstrap 4 es el añadir pestañas de opciones en la parte superior.
+
+Las pestañas se agregan en la zona del la cabecera y se requieren las siguientes clases:
+
+nav nav-tabs card-header-tabs (estas tres clases se las agrega a un elemento HTML de tipo "ul". 
+nav-item (esta clase se la agregamos a cada elemento HTML de tipo "li".
+nav-link (esta clase se la agregamos a cada ancla que debemos disponer dentro de cada "li"
+
+Problema
+
+Mostrar una tarjeta que contenga 4 pestañas, debe aparecer activa la tercera.
+-->
+<html>
+<head>
+  <title>Componente : card (pestañas)</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">   
+    <div class="row justify-content-center mt-3">
+      
+      <div class="col-md-8">        
+          <div class="card text-center border-info">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Opcion 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Opcion 2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Opcion 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Opcion 4</a>
+                  </li>                    
+              </ul>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Titulo de la tarjeta</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus sem, 
+                                    tempor vitae mattis malesuada, ornare sed erat. Pellentesque nulla dui, congue
+                                    nec tortor sit amet, maximus mattis dui. </p>
+              <a href="#" class="btn btn-primary">Entrar</a>
+            </div>
+          </div>          
+      </div>
+     
+    </div>
+  </div>
+</body>
+</html>

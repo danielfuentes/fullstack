@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<p>Este ejemplo utiliza el método addEventListener() para adjuntar un evento "keydown" a un elemento de entrada.</p>
+
+<p>Presione una tecla dentro del campo de texto para establecer un color de fondo rojo.</p>
+
+<input type="text" id="demo">
+
+<script>
+    document.getElementById("demo").addEventListener("keydown", myFunction);
+
+    function myFunction() {
+        document.getElementById("demo").style.backgroundColor = "red";
+    }
+</script>
+
+</body>
+</html>

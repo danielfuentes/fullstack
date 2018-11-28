@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<p>Este ejemplo utiliza el método addEventListener () para adjuntar un evento "mouseover" y "mouseout" a un elemento h1.</p>
+
+<h1 id="demo">Pasa el mouse sobre mí</h1>
+
+<script>
+    document.getElementById("demo").addEventListener("mouseover", mouseOver);
+    document.getElementById("demo").addEventListener("mouseout", mouseOut);
+
+    function mouseOver() {
+        document.getElementById("demo").style.color = "red";
+    }
+
+    function mouseOut() {
+        document.getElementById("demo").style.color = "black";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+    documento = document.querySelector("body");
+    documento.addEventListener('keypress', function(event) {
+        var x = event.keyCode;
+        if (x === 27) { // 27 es el escape
+            alert("Presionaste escape!!");
+        }
+    });
+</script>
+
+</body>
+</html>

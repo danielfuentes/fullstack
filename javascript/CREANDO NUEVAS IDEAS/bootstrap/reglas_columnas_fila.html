@@ -1,0 +1,37 @@
+<!doctype html>
+<!--i queremos que una página se muestre de forma diferente si la accedemos desde un dispositivo con pantalla muy grande, grande, mediana, pequeña o muy pequeña podemos asignar múltiples reglas a cada columna.
+
+Implementemos una página que muestre los datos en dos columnas y el ancho de las columnas dependa de la pantalla del dispositivo:-->
+<!--
+                             1er columna              2da columna
+
+Pantalla muy grnade:          10 unidades              2 unidades
+Pantalla grande:              9 unidades               2 unidades
+Pantalla mediana:             8 unidades               4 unidades                       
+Pantalla chica:               7 unidades               5 unidades
+Pantalla muy chica:           6 unidades               6 unidades
+-->
+<html>
+<head>
+  <title>Múltiples reglas a las columnas de una fila</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet"> 
+</head>
+<body>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-xl-10 col-lg-9 col-md-8 col-sm-7 col-6"  style="background-color:#aaa">
+        <h1>Columna 1</h1> 
+        <p>Esto es una prueba de bootstrap 4.</p>
+      </div>
+      <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5 col-6"  style="background-color:#bbb">
+        <h1>Columna 2</h1> 
+        <p>Esto es una prueba de bootstrap 4.</p>
+      </div>
+    </div>
+
+  </div> 
+</body>
+</html>

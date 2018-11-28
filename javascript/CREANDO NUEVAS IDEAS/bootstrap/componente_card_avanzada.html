@@ -1,0 +1,66 @@
+<!doctype html>
+<!--
+Vimos en el concepto anterior la estructura básica que provee Bootstrap 4. Veamos ahora como podemos fijar el color de fondo y el color de texto según las clases contextuales.
+
+Para el color de fondo disponemos de las clases:
+
+    bg-primary
+    bg-success
+    bg-info
+    bg-warning
+    bg-danger
+    bg-secondary
+    bg-dark
+    bg-light
+
+-->
+<html>
+<head>
+  <title>Componente : card (con colores contextuales para fondo, borde y texto)</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">   
+    <h1>Prueba de tarjetas</h1>
+    <div class="row">       
+      <div class="col-md">        
+          <div class="card bg-success text-white">
+            <div class="card-body">
+              <h4 class="card-title">Titulo de la tarjeta 1</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus sem, 
+                                    tempor vitae mattis malesuada, ornare sed erat. Pellentesque nulla dui, congue
+                                    nec tortor sit amet, maximus mattis dui. </p>
+              <a href="#" class="btn btn-primary">Entrar</a>
+            </div>
+          </div>          
+      </div>
+
+      <div class="col-md">        
+          <div class="card bg-warning text-white">
+            <div class="card-body">
+              <h4 class="card-title">Titulo de la tarjeta 2</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus sem, 
+                                    tempor vitae mattis malesuada, ornare sed erat. Pellentesque nulla dui, congue
+                                    nec tortor sit amet, maximus mattis dui. </p>
+              <a href="#" class="btn btn-primary">Entrar</a>
+            </div>
+          </div>          
+      </div>
+      
+      <div class="col-md">        
+          <div class="card bg-danger text-white">
+            <div class="card-body">
+              <h4 class="card-title">Titulo de la tarjeta 3</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus sem, 
+                                    tempor vitae mattis malesuada, ornare sed erat. Pellentesque nulla dui, congue
+                                    nec tortor sit amet, maximus mattis dui. </p>
+              <a href="#" class="btn btn-primary">Entrar</a>
+            </div>
+          </div>          
+      </div>      
+    </div>
+  </div>
+</body>
+</html>

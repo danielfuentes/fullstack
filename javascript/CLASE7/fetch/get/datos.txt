@@ -1,0 +1,1 @@
+Hola mis amigos, de esta forma leo datos de un archivo tipo txt, con FETCH

@@ -1,0 +1,18 @@
+#datos{
+    float: left;
+    width: 500px;
+    margin-left: 20px;
+    padding: 20px;
+    border: 2px red;
+}
+
+#progreso{
+    float: left;
+    width: 500px;
+    margin-left: 20px;
+    padding: 20px;
+    border: 2px red;
+    color: blue;
+    font-size: 36px;
+    text-align: center;
+}

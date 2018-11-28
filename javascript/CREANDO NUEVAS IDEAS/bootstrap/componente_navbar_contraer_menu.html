@@ -1,0 +1,56 @@
+<!doctype html>
+<!--
+La mayoría de los sitios web cuando se ejecutan en dispositivos angostos ocultan la barra de navegación y muestran en su lugar un botón de hamburguesa a la izquierda o derecha, el cual al ser presionado se despliegan las opciones del menú de barra en forma vertical.
+
+Veamos como Bootstrap 4 nos facilita la implementación de este tipo de barras de navegación
+-->
+<html>
+<head>
+  <title>Componente : navbar (contraer menú de navegación y mostrar botón de hamburguesa)</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- logo -->
+    <a class="navbar-brand" href="#">
+      <img src="http://www.tutorialesprogramacionya.com/imagenes/foto1.jpg" width="30" height="30" alt="">
+    </a>
+    
+    <!-- enlaces -->
+    <div class="collapse navbar-collapse" id="opciones">   
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Opción 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Opción 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Opción 3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Opción 4</a>
+        </li>            
+      </ul>
+    </div>
+  </nav>
+   <!-- jQuery -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+<!--
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+  -->
+</body>
+</html>

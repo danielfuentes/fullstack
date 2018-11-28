@@ -1,0 +1,45 @@
+<!doctype html>
+<!--
+Para aplicar Bootstrap 4 a un control select debemos fijar la clase "form-control" al select respectivo y también debemos encerrarlo con un div con la clase "form-group".
+
+La sintaxis de clases aplicadas es similar a las etiquetas "input" que vimos anteriormente.
+
+Veamos un ejemplo donde inicializamos dos controles select (uno de selección unitario de elemento y otro control select que permita la selección simultanea de varios elementos):
+-->
+<html>
+<head>
+  <title>form : control select</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <form>
+          <div class="form-group">          
+            <label for="control1">Seleccione un elemento</label> 
+            <select class="form-control" id="control1" name="control1"> 
+                <option>1</option> 
+                <option>2</option>
+                <option>3</option> 
+                <option>4</option> 
+                <option>5</option> 
+            </select> 
+          </div>
+          <div class="form-group">
+            <label for="control2">Seleccione varios elementos</label> 
+            <select multiple class="form-control" id="control2" name="control2"> 
+                <option>1</option> 
+                <option>2</option>
+                <option>3</option> 
+                <option>4</option> 
+                <option>5</option>       
+            </select>      
+          </div>  
+          <button type="submit" class="btn btn-default">Enviar</button> 
+        </form>
+    
+      </div>
+  </body>
+</html>

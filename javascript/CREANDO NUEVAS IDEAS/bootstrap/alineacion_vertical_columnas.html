@@ -1,0 +1,36 @@
+<!doctype html>
+<!--
+Bootstrap 4 trae como ventaja con respecto a versiones anteriores (3.x, 2.x etc.) la posibilidad de alinear las columnas en forma vertical. Esta facilitad esta presente ya que Bootstrap 4 utiliza todos las reglas de estilo que provee Flexbox CSS.
+
+Si esta interesado en profundizar Flexbox puede visitar el tutorial a partir del concepto 60 en CSS Ya.
+
+El empleo de la tecnología propuesta por Flexbox en Bootstrap 4 trae aparejado grandes ventajas, entre otras el alineamiento de columnas. Como desventaja podemos nombrar que Bootstrap 4 no funciona en el navegador Internet Explorer 9.
+Alineación de la fila completa.
+
+Debemos agregar la clase "align-items-start" al div que define la clase "row": 
+-->
+<html>
+<head>
+  <title>Alineamiento vertical de las columnas</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+ <div class="container">
+    
+    <div class="row align-items-start" style="height: 300px; background-color:#dd0">
+      <div class="col"  style="background-color:#aaa">
+        <h1>Columna 1</h1> 
+      </div>
+      <div class="col"  style="background-color:#bbb">
+        <h1>Columna 2</h1> 
+      </div>
+      <div class="col"  style="background-color:#ccc">
+        <h1>Columna 3</h1> 
+      </div>      
+    </div>  
+    
+  </div> 
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Evento: mousemove</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+  <div style="width:200px;height:200px;background:#0000ff" id="recuadro1">
+  </div>
+  <p id="cantidad">0</p>
+
+<script>
+  addEventListener('load',inicio,false);
+
+  function inicio()
+  {
+    document.getElementById('recuadro1').addEventListener('mousemove',mover,false);
+  }
+
+  function mover()
+  {
+    var x=parseInt(document.getElementById('cantidad').innerHTML);
+    x++;
+    document.getElementById('cantidad').innerHTML=x;
+  }
+</script>
+  
+</body>
+</html>

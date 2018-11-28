@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="cargarAjax.js"></script>
+	<style type="text/css">
+		#Errores{
+			background-color: red;
+			color: black;
+			font-weight: bold;
+			display: none;
+			font-style: italic;
+			padding: 40px;
+		}
+		#Exitoso{
+			background-color: green;
+			color: black;
+			font-weight: bold;
+			display: none;
+			font-style: italic;
+			padding: 40px;
+		}
+	</style>
+
+</head>
+<body>
+
+	<h2>Registracion</h2>
+
+
+	<div id="Errores">	
+		Errores
+	</div>
+
+	<form method="POST" enctype="multipart/form-data" id="formulario">
+
+	<div id="primeraParte">	
+
+		<label for="s-selectPaises">Pais</label>
+		<select id="s-selectPaises">
+			
+		</select>
+
+		<button type="button" id="btn-siguienteSeccion">Siguiente</button>
+		
+	</div>
+
+	<div id="segundaParte">
+
+		<label for="nombre">Nombre</label>
+		<input type="text" name="nombres" id="nombre">
+		<br>
+
+		<label for="apellido">Apellido</label>
+		<input type="text" name="apellido" id="apellido">
+		<br>
+
+		<label for="email">E-mail</label>
+		<input type="email" name="email" id="email">
+		<br>
+
+		<label for="passwd">Password</label>
+		<input type="password" name="password" id="passwd">
+		<br>
+
+		<label for="c-passwd">Confirmar Password</label>
+		<input type="password" name="cpassword" id="c-passwd">
+		<br>
+
+		<label for="dni">DNI</label>
+		<input type="number" name="dni" id="dni">
+		<br>
+
+		<label>Genero: </label>
+		<input type="radio" name="sexo" id="g-masculino" value="M"> <label for="g-masculino">Masculino</label>
+		<input type="radio" name="sexo" id="g-femenino" value="F"> <label for="g-femenino">Femenino</label>
+		<br>
+
+		<label for="f-nacimiento">Fecha de Nacimiento</label>
+		<input type="date" placeholder="formato YYYYMMDD" name="fechaNacimiento" id="f-nacimiento">
+		<br>
+
+		<label for="movil">M&oacute;vil</label>
+		<input type="number" name="celular" id="movil">
+		<br>
+
+		<label for="s-provincia">Provincia</label>
+		<select id="s-provincia">			
+		</select>
+		<br>
+
+		<label for="s-sede">Sede en la que participar&aacute;</label>
+		<select id="s-sede">			
+		</select>
+		<br>
+
+		<label for="s-ciudad">Ciudad</label>
+		<select id="s-ciudad">			
+		</select>
+
+		<br>
+
+		<button type="button" id="btn-submit">Finalizar</button>
+
+	</div>
+
+	
+
+	</form>
+
+	<div id="Exitoso">Registro Exitoso</div>
+
+</body>
+</html>

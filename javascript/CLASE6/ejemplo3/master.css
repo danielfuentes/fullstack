@@ -1,0 +1,10 @@
+/*Esto lo trabajo para dar formato al modal*/
+
+#formContainer {
+  height: 100%;
+}
+
+#termsConditionModal .terms-text {
+  max-height: 60%;
+  overflow: auto;
+}

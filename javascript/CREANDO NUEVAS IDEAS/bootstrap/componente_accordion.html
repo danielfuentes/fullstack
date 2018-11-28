@@ -1,0 +1,91 @@
+<!doctype html>
+<!--
+En Bootstrap 4 disponemos de una componente llamada "äccordion" que básicamente muestra una serie de enlaces que ocultan contenido. Cuando se presiona un hipervínculo se muestra el contenido para dicho enlace, luego cuando se presiona otro enlace se oculta el actual y se abre el nuevo.
+
+Es muy utilizado en la web en sitios sobre "preguntas frecuentes","políticas de privacidad", "descripción de características de productos" etc.
+
+Veamos un ejemplo con la componente "accordion":
+-->
+<html>
+<head>
+  <title>Componente : accordion</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+
+    <div id="accordion1">
+      <div class="card">
+        <div class="card-header" id="cabecera1">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#respuesta1" aria-expanded="true" aria-controls="respuesta1">
+              Pregunta frecuente 1
+            </button>
+          </h5>
+        </div>
+        <div id="respuesta1" class="collapse show" aria-labelledby="cabecera1" data-parent="#accordion1">
+          <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+              mollit anim id est laborum.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="cabecera2">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#respuesta2" aria-expanded="false" aria-controls="respuesta2">
+              Pregunta frecuente 2
+            </button>
+          </h5>
+        </div>
+        <div id="respuesta2" class="collapse" aria-labelledby="cabecera2" data-parent="#accordion1">
+          <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+              mollit anim id est laborum.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="cabecera3">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#respuesta3" aria-expanded="false" aria-controls="respuesta3">
+              Pregunta frecuente 3
+            </button>
+          </h5>
+        </div>
+        <div id="respuesta3" class="collapse" aria-labelledby="cabecera3" data-parent="#accordion1">
+          <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+              mollit anim id est laborum.
+          </div>
+        </div>
+      </div>
+    </div>    
+
+  </div>
+ <!-- jQuery -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+<!--
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+  -->
+</body>
+</html>

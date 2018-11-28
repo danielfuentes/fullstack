@@ -1,0 +1,54 @@
+<!doctype html>
+<!--
+Hemos visto que la componente "nav" nos permite definir una serie de hipervínculos. Ahora veremos que en lugar de alguno de esos hipervínculos podemos disponer una o más componentes de tipo "dropdown" que vimos en conceptos anteriores.
+
+Recordemos que las componentes de tipo "dropdown" (listas desplegables) requieren los archivos de Javascript propuestos por Bootstrap 4.
+
+Un ejemplo para ver la sintaxis de un menú horizontal con una opción de tipo "dropdown":
+-->
+<html>
+<head>
+  <title>Componente : nav (con elementos de tipo dropdown)</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <ul class="nav mt-2">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Opción 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Opción 2</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Buscadores</a>        
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="http://www.google.com">Google</a>
+          <a class="dropdown-item" href="http://www.bing.com">Bing</a>
+          <a class="dropdown-item" href="http://www.yahoo.com">Yahoo</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Opción 4</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Opción 5</a>
+      </li>
+    </ul>
+  </div>
+   <!-- jQuery -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script <src="js/popper.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+  <!--
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+  -->
+</body>
+</html>

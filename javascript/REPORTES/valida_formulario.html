@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <!-–Programa muy simple para demostrar las validaciones usando Javascrip 
+  MSc Angel Daniel Fuentes – Digital House ->
+  <head>
+    <title>Demostración sencilla de como se valida usando Javascrip</title>
+    <meta charset="utf8">
+  </head>
+<body>
+
+<h1 id="titulo">Formulario de registro de datos</h1>
+<br>
+
+<form name="formulario" id="formulario" action="carta.php" method="POST">
+  <table>
+    <tr>
+      <td>DNI: </td>
+      <td><input type="text" id="dni" name="dni"></td>
+    </tr>
+    <tr>
+      <td>Nombre: </td>
+      <td><input type="text" id="nombre" name="nombre" size="30" maxlength="100"></td>
+    </tr>
+    <tr>
+    <tr>
+      <td>Apellido: </td>
+      <td><input type="text" id="apellido" name="apellido" size="30" maxlength="100"></td>
+    </tr>
+    <tr>
+    <td>Acepto los terminos y condiciones</td>
+    <td>
+      <input name="terminos" id="terminos" type="checkbox" value="">
+      <label for="terminos">Terminos</label>
+    </td>
+    </tr>    
+    <tr>
+      <td colspan='2' align="center">
+        <input type="reset" value="Borrar">
+        <input type="submit" value="Enviar">
+      </td>
+    </tr>
+  </table>
+</form>
+<script src="master.js"></script>
+</body>
+</html>

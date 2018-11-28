@@ -1,0 +1,50 @@
+<!doctype html>
+<!--
+Podemos disponer imágenes en la tarjeta, pero si queremos que respete lo vértices redondeados de la tarjeta tenemos que utilizar algunas clases que pasaremos a ver.
+Imagen en la parte superior e inferior de la tarjeta de la tarjeta.
+
+Debemos utilizar las clases "card-img-top" y "card-img-bottom" según se muestren las imágenes dentro de la tarjeta.
+
+Confeccionaremos una página que muestre dos tarjetas, la primera muestra una imagen en la parte superior y la segunda una imagen en la parte inferior:
+-->
+<html>
+<head>
+  <title>Componente : card (con imágenes)</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">   
+    <h1>Prueba de tarjetas</h1>
+    <div class="row">       
+      <div class="col-md">        
+          <div class="card">
+            <img class="card-img-top" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro1.jpg">            
+            <div class="card-body">
+              <h4 class="card-title">Titulo de la tarjeta 1</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus sem, 
+                                    tempor vitae mattis malesuada, ornare sed erat. Pellentesque nulla dui, congue
+                                    nec tortor sit amet, maximus mattis dui. </p>
+              <a href="#" class="btn btn-primary">Entrar</a>
+            </div>
+          </div>          
+      </div>
+
+      <div class="col-md">        
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Titulo de la tarjeta 2</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lectus sem, 
+                                    tempor vitae mattis malesuada, ornare sed erat. Pellentesque nulla dui, congue
+                                    nec tortor sit amet, maximus mattis dui. </p>
+              <a href="#" class="btn btn-primary">Entrar</a>
+            </div>
+            <img class="card-img-bottom" src="http://www.tutorialesprogramacionya.com/imagenes/cuadro2.jpg">                        
+          </div>          
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>

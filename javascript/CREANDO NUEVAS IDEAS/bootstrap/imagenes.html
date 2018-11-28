@@ -1,0 +1,37 @@
+<!doctype html>
+<!--
+Bootstrap define una serie de clases para aplicar al elemento HTML <img>:
+
+    rounded : Define las esquinas redondeadas en la imagen.
+    Si accedemos al código del archivo bootstrap.css veremos que inicializa la propiedad border-radius con el valor de 0.25rem.
+    rounded-circle : Convierte la imagen en un círculo, para ello Bootstrap 4 inicializa la propiedad border-radius: 50%;
+    img-thumbnail : Define un recuadro y muestra la imagen cuando se carga la página en el navegador.
+    img-fluid : Permite escalar correctamente la imagen (Esto lo logra Bootstrap 4 definiendo la propiedad max-width: 100%; y height: auto;)
+    float-left : flota la imagen a la izquierda.
+    float-right : flota la imagen a la derecha.
+
+Veamos una página que muestra unas imágenes aplicando sucesivamente las distintas clases disponibles en Bootstrap 4:
+-->
+<html>
+<head>
+  <title>Imágenes</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <img src="http://www.tutorialesprogramacionya.com/cssya/imagen1.png" class="rounded">
+    <hr>
+    <img src="http://www.tutorialesprogramacionya.com/cssya/imagen1.png" class="rounded-circle">
+    <hr>
+    <img src="http://www.tutorialesprogramacionya.com/cssya/foto1.jpg" class="img-fluid">    
+    <hr>
+    <img src="http://www.tutorialesprogramacionya.com/cssya/imagen1.png" class="img-thumbnail">    
+    <hr>
+    <img src="http://www.tutorialesprogramacionya.com/cssya/imagen1.png" class="float-left">
+    <img src="http://www.tutorialesprogramacionya.com/cssya/imagen1.png" class="float-right">    
+    <hr>    
+  </div>
+</body>
+</html>

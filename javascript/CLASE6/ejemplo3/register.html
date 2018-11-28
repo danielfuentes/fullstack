@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="container">
+      <div id="formContainer" class="row align-items-center">
+        <div class="col-sm-6 offset-md-3">
+          <h1>Registración</h1>
+          <form id="Formulario" name="registerForm" novalidate action=""  method="POST">
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input required name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su correo">
+            </div>
+            <div class="form-group">
+              <label for="password">Contraseña</label>
+              <input required name="password" type="password" class="form-control" id="password" placeholder="Contraseña">
+              <small class="form-text text-muted">Al menos 6 caracteres, debe contenter letras en mayúsculas y minúsculas y números</small>
+            </div>
+            <div class="form-group">
+              <label for="password">Repetir contraseña</label>
+              <input required name="passwordRepeat" type="password" class="form-control" id="passwordRepeat" placeholder="Repetir contraseña">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">@</span>
+              </div>
+              <input required name="username" type="text" class="form-control" placeholder="Nombre de usuario" aria-label="@" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="termsCondition" name="termsCondition">
+              <label class="form-check-label" for="termsCondition">He leído y acepto <button id="termsConditionButton" type="button" class="btn btn-link" data-toggle="modal" data-target="#termsConditionModal">los términos y condiciones</button></label>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrarme</button>
+            Ya tengo una cuenta. <a href="inicio.html" class="btn btn-link">Iniciar sesión</a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de Términos y Condiciones -->
+    <div id="termsConditionModal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Términos y condiciones</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p class="terms-text">
+              Estimados alumnos, esto es una prueba de la ventana que se abre para mostrar los terminos y condiciones. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit, eros sed ultrices pulvinar, dolor urna lobortis libero, nec vestibulum arcu dolor at neque. Proin purus ligula, iaculis sit amet consectetur sit amet, aliquam eget orci. Curabitur eleifend sapien efficitur est semper, at porttitor lorem molestie. Nulla ac tincidunt dolor. Proin sollicitudin felis est, nec convallis enim maximus vel. Suspendisse mi sem, pulvinar sit amet congue hendrerit, pulvinar non quam. Donec urna odio, interdum at convallis non, suscipit a est.
+
+              Integer tincidunt nisi et faucibus euismod. Vestibulum fringilla dolor sed lacus aliquam ultricies. Sed in massa non massa egestas ultricies. Mauris sit amet odio malesuada, pellentesque orci sit amet, vestibulum sapien. Duis rutrum lectus et egestas mollis. Pellentesque mattis velit at dictum pellentesque. Pellentesque lectus lorem, dictum tempor fermentum ac, cursus ut nulla. Aenean rhoncus ante quis ligula pulvinar, gravida congue dolor tempus. Nunc in ligula vitae justo ullamcorper laoreet. Aliquam viverra nunc eu massa fringilla, fringilla varius enim maximus. Phasellus id ante elementum, aliquam metus vel, tempus nibh. Nam sed risus in risus pulvinar lobortis. Sed a quam ac massa elementum tristique ut quis ex. Donec metus velit, gravida vel efficitur vitae, imperdiet at magna. Aliquam erat volutpat.
+
+              Mauris eget ex nec felis placerat porttitor non at libero. Sed maximus lacus malesuada feugiat scelerisque. Integer eu porta erat. Etiam molestie magna quis tempus tincidunt. Nullam vitae libero cursus, vehicula neque vitae, pharetra purus. Phasellus id justo orci. Quisque rhoncus tincidunt sem et viverra. Suspendisse placerat urna eu eros ornare, in bibendum urna posuere. Aliquam ac lacus vel magna condimentum hendrerit vel ut dolor. Etiam et accumsan nibh. Morbi hendrerit turpis et lectus consequat, nec tincidunt turpis mollis. Morbi et posuere lacus. Curabitur sed lorem nec quam mollis molestie. Nunc molestie, purus sit amet lacinia finibus, odio purus gravida nisl, dignissim eleifend risus nisl vitae nisi. Donec interdum enim odio, quis consequat nunc accumsan sit amet.
+
+              Integer lacinia non purus ac rhoncus. Nunc iaculis, mi eget rhoncus bibendum, nisl lectus porttitor tellus, ut tempor elit magna in est. Sed ut ornare nulla. Suspendisse viverra pharetra nulla ut interdum. Maecenas condimentum ullamcorper est, non condimentum sapien. Integer consequat malesuada tortor, ut dapibus massa. Curabitur vehicula diam sit amet iaculis interdum. Vivamus vestibulum nulla est, in posuere orci lobortis eget. Suspendisse elementum nibh non tempus facilisis. Vivamus sed congue orci. Morbi volutpat ipsum scelerisque sem imperdiet accumsan vel id lorem. Nunc a volutpat arcu. Curabitur metus libero, aliquam ut euismod nec, accumsan vel odio. Sed nec vestibulum diam, eu molestie odio. Nulla sed massa porta, consectetur ante ut, varius dui.
+
+              Maecenas dapibus aliquam magna nec dictum. Nulla facilisi. Phasellus id luctus sem. Mauris iaculis blandit nisi, nec gravida ligula porttitor quis. Vivamus placerat, libero quis mollis aliquet, nisl felis pulvinar orci, ut maximus risus urna pulvinar turpis. Aliquam id elit sapien. In ultrices dui felis, nec sodales mi ultrices eleifend. Donec dapibus tellus at lectus sollicitudin, in bibendum nisi facilisis. Maecenas molestie ut risus laoreet fringilla. Aenean id sapien nec mauris tincidunt lacinia ut quis mi. Integer nec tellus rutrum, condimentum massa a, pharetra nisl. Suspendisse vitae congue lectus. Fusce consequat tincidunt neque, sit amet mattis massa efficitur vitae. Curabitur nisl ex, pellentesque eu libero vitae, auctor tempor velit. In at luctus eros, maximus vulputate orci.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Modal de Términos y Condiciones -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="register.js"></script>
+  </body>
+</html>

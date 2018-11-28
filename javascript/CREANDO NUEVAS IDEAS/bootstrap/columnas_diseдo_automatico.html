@@ -1,0 +1,58 @@
+<!doctype html>
+<!--
+Vimos en conceptos anteriores que en Bootstrap disponemos de 12 unidades a ser repartidas en una o más columnas, además de indicar a que tamaño de dispositivo está orientado.
+
+Si todas las columnas tendrán el mismo ancho podemos evitar disponer el valor que indicamos donde hay un asterisco:
+
+col-*
+col-sm-*
+col-md-*
+col-lg-*
+col-xl-*
+
+La sintaxis en un ejemplo con filas que tienen 3 columnas con la misma cantidad de unidades:
+-->
+<html>
+<head>
+  <title>Columnas de diseño automático</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+ <div class="container">
+    <div class="row">
+      <div class="col"  style="background-color:#aaa">
+        <h1>Columna 1</h1> 
+        <p>Esto es una prueba de bootstrap 4.</p>
+      </div>
+      <div class="col"  style="background-color:#bbb">
+        <h1>Columna 2</h1> 
+        <p>Esto es una prueba de bootstrap 4.</p>
+      </div>
+      <div class="col"  style="background-color:#ccc">
+        <h1>Columna 3</h1> 
+        <p>Esto es una prueba de bootstrap 4.</p>
+      </div>
+    </div>  
+    
+    <hr>
+    
+    <div class="row">
+      <div class="col-lg"  style="background-color:#aaa">
+        <h1>Columna 1</h1> 
+        <p>Esto es una prueba de bootstrap 4.</p>
+      </div>
+      <div class="col-lg"  style="background-color:#bbb">
+        <h1>Columna 2</h1> 
+        <p>Esto es una prueba de bootstrap 4.</p>
+      </div>
+      <div class="col-lg"  style="background-color:#ccc">
+        <h1>Columna 3</h1> 
+        <p>Esto es una prueba de bootstrap 4.</p>
+      </div>
+    </div>  
+    
+  </div> 
+</body>
+</html>

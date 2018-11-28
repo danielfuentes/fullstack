@@ -1,0 +1,88 @@
+<!doctype html>
+<!--
+Para crear botones Bootstrap 4 propone utilizar la etiqueta "button", "a" o "input" y define una serie de clases:
+
+btn 
+btn-primary
+btn-secondary
+btn-success
+btn-info
+btn-warning
+btn-danger
+btn-dark
+btn-light
+btn-link
+
+Siempre debemos asignar la clase btn y alguna de las otras clases con un significado propio indicado por su color.
+
+Cada una de estas clases define un estilo particular para un botón y tiene un significado que nos ayudan a definir en que caso los debemos utilizar:
+
+    btn-primary : Es un botón que se destaca entre un conjunto de botones.
+    btn-secondary : Es un botón no tan importante como btn-primary.
+    btn-success : Se utiliza para indicar una acción exitosa (por ejemplo luego de registrarse a un servicio donde se muestra un botón para ir a la página principal del sitio)
+    btn-info : Es un botón para información.
+    btn-warning : Es un botón que nos informa que debemos tener cuidado con la acción que tiene asociado el botón.
+    btn-danger : Indica que la acción que tiene asociado el botón es peligrosa.
+    btn-dark : Muestra un botón oscuro.
+    btn-light : Muestra un botón claro.
+    btn-link : Convierte al botón como un hipervínculo, haciendo que disminuya su importancia.
+
+Problema
+
+Mostrar una lista de button asociando a cada uno una clase distinta propuesta por Bootstrap 4 y mostrando como leyenda su significado.
+-->
+<html>
+<head>
+  <title>button : estilos</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+    <form>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">
+        btn-primary : Es un botón que se destaca entre un conjunto de botones.</button>       
+      </div> 
+      <div class="form-group">
+        <button type="submit" class="btn btn-secondary">
+        btn-secondary : Es un botón no tan importante como btn-primary.</button>       
+      </div>       
+      <div class="form-group">
+        <button type="submit" class="btn btn-success">
+        btn-success : Se utiliza para indicar una acción exitosa.</button>       
+      </div> 
+      <div class="form-group">
+        <button type="submit" class="btn btn-info">
+        btn-info : Es un botón para información.</button>       
+      </div> 
+      <div class="form-group">
+        <button type="submit" class="btn btn-warning">
+        btn-warning : Es un botón que nos informa que debemos tener 
+        cuidado con la acción que tiene asociado el botón.</button>       
+      </div> 
+      <div class="form-group">
+        <button type="submit" class="btn btn-danger">
+        btn-danger : Indica que la acción que tiene asociado el botón 
+        es peligrosa.</button>       
+      </div> 
+      <div class="form-group">
+        <button type="submit" class="btn btn-dark">
+        btn-dark : Muestra un botón oscuro.</button>       
+      </div>       
+      <div class="form-group">
+        <button type="submit" class="btn btn-light">
+        btn-light : Muestra un botón claro.</button>       
+      </div>             
+      <div class="form-group">
+        <button type="submit" class="btn btn-link">
+        btn-link : Convierte al botón como un hipervínculo, haciendo
+        que disminuya su importancia.</button>       
+      </div> 
+    </form>
+
+  </div> 
+</body>
+</html>

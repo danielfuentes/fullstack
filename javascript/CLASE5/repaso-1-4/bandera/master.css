@@ -1,0 +1,20 @@
+#linea1,#linea2,#linea3{
+	width:300px;
+	height:100px;
+	border:1px solid black;
+	background:white;
+}
+.color{
+	width:30px;
+	height:30px;
+	border:1px solid black;
+	margin-right:20px;
+	display:inline-block;
+}
+#red{ background:red; }
+#lightblue{ background:lightblue; }
+#green{ background:green; }
+#white{ background:white; }
+#yellow{ background:yellow; }
+#blue{ background:blue; }
+#black{ background:black; }

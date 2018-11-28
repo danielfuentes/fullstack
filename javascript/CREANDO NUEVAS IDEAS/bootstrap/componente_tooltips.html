@@ -1,0 +1,43 @@
+<!doctype html>
+<!--
+La componente Tooltip muestra un pequeño mensaje cuando el usuario se desplaza con la flecha del mouse sobre un elemento HTML que se le ha configurado un Tooltip.
+
+Para trabajar con esta componente además de importar todos los archivos CSS y Javascript debemos agregar una línea de código dentro del evento principal de jQuery.
+Problema
+
+Mostrar tres botones a sitios de buscadores. Mostrar un mensaje cuando la flecha del mouse se encuentra encima de botón.
+-->
+<html>
+<head>
+  <title>Componente : Tooltips</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <a data-toggle="mensaje" title="Google Inc." href="https://www.google.com" class="btn btn-success">Google</a>
+    <a data-toggle="mensaje" title="Microsoft" href="https://www.bing.com" class="btn btn-success ml-2">Bing</a>
+    <a data-toggle="mensaje" title="Yahoo Inc" href="https://www.yahoo.com" class="btn btn-success ml-2">Yahoo</a>
+  </div> 
+  <!-- jQuery -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+ 
+
+<!--
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  -->
+  <script>
+    $(document).ready(function(){
+        $('[data-toggle="mensaje"]').tooltip(); 
+    });
+    </script>
+</body>
+</html>

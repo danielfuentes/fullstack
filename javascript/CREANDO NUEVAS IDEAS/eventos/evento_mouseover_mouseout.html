@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eventos onMouseOver y onMouseOut</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  function pintar(col)
+  {
+    document.getElementById('cuadrado1').style.backgroundColor=col;
+  }
+</script>
+
+<a href="#" onMouseOver="pintar('#f00')" onMouseOut="pintar('#000')">Rojo</a> -
+<a href="#" onMouseOver="pintar('#0f0')" onMouseOut="pintar('#000')">Verde</a> -
+<a href="#" onMouseOver="pintar('#00f')" onMouseOut="pintar('#000')">Azul</a>
+<div id="cuadrado1" style="background:#000;width:200px;height:200px"></div>
+
+</body>
+</html>

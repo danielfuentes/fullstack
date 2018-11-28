@@ -1,0 +1,64 @@
+<!doctype html>
+<!--
+Esta posibilidad de alinear las columnas se puede presentar si no utilizamos las 12 unidades a distribuir.
+
+Si la suma de unidades es igual a 12 luego no podemos alinear horizontalmente las columnas ya que se encuentra toda la fila ocupada.
+
+Con un ejemplo sencillo veamos cuales son las clases que ofrece Bootstrap 4 para permitir alinear las columnas:
+-->
+<html>
+<head>
+  <title>Alineamiento horizontal de las columnas</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+ <div class="container">   
+    <div class="row justify-content-end" style="background-color:#dd0">
+      <div class="col-3"  style="background-color:#aaa">
+        <h1>Columna 1</h1> 
+      </div>
+      <div class="col-3"  style="background-color:#bbb">
+        <h1>Columna 2</h1> 
+      </div>  
+    </div>  
+    <hr>
+    <div class="row justify-content-start" style="background-color:#dd0">
+      <div class="col-3"  style="background-color:#aaa">
+        <h1>Columna 1</h1> 
+      </div>
+      <div class="col-3"  style="background-color:#bbb">
+        <h1>Columna 2</h1> 
+      </div>  
+    </div>  
+    <hr>
+    <div class="row justify-content-center" style="background-color:#dd0">
+      <div class="col-3"  style="background-color:#aaa">
+        <h1>Columna 1</h1> 
+      </div>
+      <div class="col-3"  style="background-color:#bbb">
+        <h1>Columna 2</h1> 
+      </div>  
+    </div>  
+    <hr>
+    <div class="row justify-content-between" style="background-color:#dd0">
+      <div class="col-3"  style="background-color:#aaa">
+        <h1>Columna 1</h1> 
+      </div>
+      <div class="col-3"  style="background-color:#bbb">
+        <h1>Columna 2</h1> 
+      </div>  
+    </div>  
+    <hr>
+    <div class="row justify-content-around" style="background-color:#dd0">
+      <div class="col-3"  style="background-color:#aaa">
+        <h1>Columna 1</h1> 
+      </div>
+      <div class="col-3"  style="background-color:#bbb">
+        <h1>Columna 2</h1> 
+      </div>  
+    </div>      
+  </div> 
+</body>
+</html>

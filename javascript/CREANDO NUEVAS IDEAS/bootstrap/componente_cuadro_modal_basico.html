@@ -1,0 +1,64 @@
+<!doctype html>
+<!--
+Los cuadros de diálogo que implementa Bootstrap 4 requieren de las librerías de Javascript, por lo tanto no debemos olvidar de importarlas.
+
+Un cuadro modal es una ventana que aparece superpuesta a toda la página actual. Para cerrarla podemos presionar la "x", disponer un botón de cerrado o presionar en cualquier parte fuera del diálogo.
+
+Solo se puede tener una ventana modal a la vez, eso significa que desde una ventana modal no se puede disparar otra.
+
+Veamos una página con la estructura básica para implementar un diálogo modal:
+-->
+<html>
+<head>
+  <title>Componente : modal (cuadro de diálogo modal básico)</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container"> 
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dialogo1">Abrir ventana de diálogo</button>
+
+    <div class="modal fade" id="dialogo1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- cabecera del diálogo -->
+          <div class="modal-header">
+            <h4 class="modal-title">Título del diálogo</h4>
+            <button type="button" class="close" data-dismiss="modal">X</button>
+          </div>
+    
+          <!-- cuerpo del diálogo -->
+          <div class="modal-body">
+            Contenido del diálogo.
+          </div>
+    
+          <!-- pie del diálogo -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+    
+        </div>
+      </div>
+    </div> 
+
+  </div>
+
+  <!-- jQuery -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    
+
+  <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  -->
+</body>
+</html>

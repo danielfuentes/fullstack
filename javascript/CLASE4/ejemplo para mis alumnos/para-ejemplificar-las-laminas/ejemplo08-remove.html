@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Ejemplo del evento remove</title>
+</head>
+<body>
+    <button>removeEventListener</button>
+    <script>
+        var documento = document.querySelector("body");
+        var boton = document.querySelector("button");
+        boton.addEventListener("click", cambiarColor);
+        boton.addEventListener("mouseout",cambiarColorOtro)
+        boton.removeEventListener("click", cambiarColor);
+        function cambiarColor() {
+            documento.style.backgroundColor= "red";
+            //this.style.backgroundColor = "blue";
+        }
+        function cambiarColorOtro() {
+            documento.style.backgroundColor= "blue";
+            //this.style.backgroundColor = "blue";
+        }
+    
+        
+    </script>    
+</body>
+</html>
+

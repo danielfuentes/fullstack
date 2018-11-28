@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eventos onFocus y onBlur</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+  function vaciar(control)
+  {
+    control.value='';
+  }
+  function verificarEntrada(control)
+  {
+    if (control.value=='')
+      alert('Debe ingresar datos');
+  }
+</script>
+
+<form>
+  <input type="text" id="nombre" onFocus="vaciar(this)" 
+         onBlur="verificarEntrada(this)" value="nombre"><br>
+  <input type="text" id="edad" onFocus="vaciar(this)" 
+         onBlur="verificarEntrada(this)" value="mail">
+  <br>
+  <input type="button" value="Confirmar">
+</form>
+</body>
+</html>

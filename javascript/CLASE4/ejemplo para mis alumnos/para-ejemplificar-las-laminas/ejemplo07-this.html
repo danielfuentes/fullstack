@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Ejemplo del evento this</title>
+</head>
+<body>
+
+<button>This</button>
+
+<script>
+    var documento = document.querySelector("body");
+    var boton = document.querySelector("button");
+    boton.addEventListener('click', cambiarColor);
+
+    function cambiarColor() {
+        documento.style.backgroundColor= "red";
+        //this.style.backgroundColor = "blue";
+    }
+
+</script>
+</body>
+</html>
