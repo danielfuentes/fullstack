@@ -1,0 +1,54 @@
+header {
+    padding: 154px 0 100px;
+  }
+  
+section {
+padding: 150px 0;
+}
+ 
+.bg-purple {
+    background-color:  rgb(66, 133, 244);
+}
+
+.font-white {
+    color: rgba(255, 255, 255, 1);
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: rgba(158, 158, 158, 1);
+}
+
+.navbar-brand:hover {
+    color: rgba(158, 158, 158, 1);
+}
+
+.bg-home {
+    background-color: rgba(232, 232, 232, 1);
+}
+
+div button:hover {
+  background-color: rgba(66, 133, 244, 1);
+}
+
+.navbar-toggler-icon { 
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+}
+
+.navbar-toggler {
+  border: 2px solid rgba(158, 158, 158, 1);
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+  background-color: rgba(66, 133, 244, 1);
+}
+
+img {
+    border: 6px rgb(42, 39, 82) solid;
+}
+
