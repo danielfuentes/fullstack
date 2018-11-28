@@ -1,0 +1,294 @@
+<HEAD>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<STYLE>
+td{
+	font-family: "Times New Roman", Times, serif;
+}
+.htm{
+	font-family: "Courier New", Courier, mono;
+	font-size: 13px;
+}
+.att{
+	color: #FF0000;
+	font-family: "Courier New", Courier, mono;
+	font-size: 13px;
+}
+.func{
+	color: #000077;
+	font-family: "Courier New", Courier, mono;
+	font-size: 13px;
+}
+.var{
+	color: #770000;
+	font-family: "Courier New", Courier, mono;
+	font-size: 13px;
+}
+.key{
+	color: #0000ff;
+	font-family: "Courier New", Courier, mono;
+	font-size: 13px;
+}
+.val{
+	color: #ff00ff;
+	font-family: "Courier New", Courier, mono;
+	font-size: 13px;
+}
+.txt{
+	color: #000000;
+	font-family: "Courier New", Courier, mono;
+	font-size: 13px;
+}
+</STYLE>
+<TITLE>PDFTable</TITLE>
+</HEAD>
+<H1 align="center">Output a HTML Table to file PDF use FPDF</H1>
+<br>
+<h2>Informations</h2>
+Class: <a href="pdftable.zip">PDFTable</a><br>
+Author: <a href='mailto:vncommando@yahoo.com'>vietcom</a><br>
+License: Freeware<br>
+Version: 1.5 (25 April 2007)<br><br>
+In this class, I use class <a href='http://jexpert.us'>HTMLParser</a> from <a href='jose@jexpert.us'>Jose Solorzano</a> and class <a href='http://fpdf.org'>FPDF</a> from <a href='olivier@fpdf.org'>Olivier PLATHEY</a>
+<br>
+Special thanks to Vincent Tomi for ver 1.3
+<h2>Description</h2>
+This script allows you to print a HTML table to file PDF.
+<h4>It supports the follow tags:</h4>
+<ul>
+  <li class=htm><font class=key>&lt;table</font> <font class=att>border align 
+    width height bgcolor</font><font class=key>>&lt;/table></font><br>
+    <table border="1">
+      <tr bgcolor="#CCCCCC"> 
+        <td align="center">Attribute</td>
+        <td align="center">Value</td>
+        <td align="center">Description</td>
+      </tr>
+      <tr> 
+        <td class=att>border</td>
+        <td class=val>x</td>
+        <td>the thick of border table</td>
+      </tr>
+      <tr> 
+        <td class=att>align</td>
+        <td class=val>left,center,right</td>
+        <td>Table will be aligned with the current page</td>
+      </tr>
+      <tr> 
+        <td class=att>width, height</td>
+        <td class=val>integer</td>
+        <td>the width or the height of this table (in milimet by default)</td>
+      </tr>
+      <tr> 
+        <td class=att>bgcolor</td>
+        <td class=val>#xxxxxx</td>
+        <td>Background color of this table in hexadecimal</td>
+      </tr>
+    </table>
+    <br>
+  <li><font class=key>&lt;tr bgcolor repeat>&lt;/tr></font> 
+    <table border="1">
+      <tr bgcolor="#CCCCCC"> 
+        <td align="center">Attribute</td>
+        <td align="center">Value</td>
+        <td align="center">Description</td>
+      </tr>
+      <tr> 
+        <td class=att>bgcolor</td>
+        <td class=val>#xxxxxx</td>
+        <td>Background color of this row in hexadecimal</td>
+      </tr>
+      <tr> 
+        <td class=att>repeat</td>
+        <td class=val>&nbsp;</td>
+        <td>If a row has this property, it will be rewrite on each page if the table is broken on many page. A table can have many row repeatly. It's useful for a long table with title and the title will be rewrite on each page.</td>
+      </tr>
+    </table>
+    <br>
+  <li><font class=key>&lt;td border align valign width height bgcolor colspan 
+    rowspan nowrap family size color>&lt;/td></font> 
+    <table border="1">
+      <tr bgcolor="#CCCCCC"> 
+        <td align="center">Attribute</td>
+        <td align="center">Value</td>
+        <td align="center">Description</td>
+      </tr>
+      <tr> 
+        <td class=att>border</td>
+        <td class=val>0,trbl,x</td>
+        <td>Border can be 0 for a cell with no border. If you want to customise 
+          your cell, use trbl to define: t=0|1=top, r=0|1=right, b=0|1=bottom 
+          and l=0|1=left.<br>
+		  Example:<br>
+		  - <font class=att>border</font><font class=htm>=</font><font class=val>'1010'</font>: Draw only border top and bottom<br>
+		  - <font class=att>border</font><font class=htm>=</font><font class=val>'0101'</font>: Draw only border left and right<br>
+		  - <font class=att>border</font><font class=htm>=</font><font class=val>'1001'</font>: Draw only border top and left<br>
+		  - <font class=att>border</font><font class=htm>=</font><font class=val>'1'</font>: Draw all border 0.1mm<br>
+		  - <font class=att>border</font><font class=htm>=</font><font class=val>'2.5'</font>: Draw all border 2.5mm
+		  </td>
+      </tr>
+      <tr> 
+        <td class=att>align</td>
+        <td class=val>left,center,right</td>
+        <td>Text will be align inside the cell in horizontal, defaut is left</td>
+      </tr>
+      <tr> 
+        <td class=att>valign</td>
+        <td class=val>top,middle,bottom</td>
+        <td>Text will be align inside the cell in vertical, defaut is middle</td>
+      </tr>
+      <tr> 
+        <td class=att>width, height</td>
+        <td class=val>integer</td>
+        <td>the width or the height of this table (in milimet by default)</td>
+      </tr>
+      <tr> 
+        <td class=att>bgcolor</td>
+        <td class=val>#xxxxxx</td>
+        <td>Background color of this table in hexadecimal</td>
+      </tr>
+      <tr> 
+        <td class=att>colspan</td>
+        <td class=val>integer</td>
+        <td rowspan="2">Table cells can span across more than one column or row. 
+          The attributes COLSPAN (&quot;how many across&quot;) and ROWSPAN (&quot;how 
+          many down&quot;) indicate how many columns or rows a cell should take 
+          up.</td>
+      </tr>
+      <tr> 
+        <td class=att>rowspan</td>
+        <td class=val>integer</td>
+      </tr>
+      <tr> 
+        <td class=att>nowrap</td>
+        <td>&nbsp;</td>
+        <td> Indicates that text should not wrap in the cell</td>
+      </tr>
+      <tr> 
+        <td class=att>family</td>
+        <td class=val>Verdana,Times,.....</td>
+        <td>Family font
+		  </td>
+      </tr>
+      <tr> 
+        <td class=att>style</td>
+        <td class=val>bold,italic,underline</td>
+        <td>Style of the font, delimiter=",", without space, case sensitive</td>
+      </tr>
+      <tr> 
+        <td class=att>size</td>
+        <td class=val>12,14...</td>
+        <td>Size of font</td>
+      </tr>
+    </table>
+    <br>
+  <li><font class=key>&lt;br></font> forced line break
+  <li><font class=key>&amp;nbsp;</font> space character
+  <li><font class=key>&amp;lt;</font> less than character
+  <li>Any other tag which isn't supported will be understood as tag <font class=key>&lt;br></font>.
+</ul>
+<h4>Doesn't support yet:</h4>
+<ul>
+<li>Table inside other table :<br>I don't know what it will be if there are more than one table!
+</ul>
+<h4>Special note:</h4>
+<ul>
+<li>Header :<br>If you rewrite function Header() for generate header of each page, you should be insert <font class=var>parent::Header();</font> in the first line of your Header() function!
+<li>Multipage :<br>One table can be written on many page.<br>The follow page has same size with the current page.<br>Any row which has the height great than (height page - height of repeat rows) will be replaced by phrase: <font class=att>Height of this row is great than page height!</font>
+<li>Close HTML tag:<br>It is not necessary to have a close tag for an open tag. Thus, you don't need use in your variable these tags: <font class=key>&lt;/td></font>, <font class=key>&lt;/tr></font> and <font class=key>&lt;/table></font>.
+</ul>
+<h2>Example</h2>
+<table bgcolor="#CCCCCC" border=1><tr><td class=htm>
+<font class=att>&lt;?php</font><br>
+      <font class=var>$html</font> = <font class=key>&lt;&lt;&lt;MYTABLE</font><br>
+&nbsp; <font class=key>&lt;table<font class=att> border</font>=<font class=val>"1"</font><font class=att> align</font>=<font class=val>"center"</font>&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &lt;tr&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td<font class=att> rowspan</font>=<font class=val>"2"</font><font class=att> valign</font>=<font class=val>"middle"</font><font class=att> border</font>=<font class=val>"0"</font>&gt;</font><font class=txt>rowspan=2, valign=middle</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td&gt;</font><font class=txt>Normal</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td&gt;</font><font class=txt>Normal</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td&gt;</font><font class=txt>Normal</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td<font class=att> colspan</font>=<font class=val>"2"</font><font class=att> rowspan</font>=<font class=val>"2"</font><font class=att> valign</font>=<font class=val>"bottom"</font><font class=att> bgcolor</font>=<font class=val>"#FF00FF"</font>&gt;</font><font class=txt>colspan=2</font><font class=key>&lt;br&gt;</font><font class=txt>rowspan=2</font><font class=key>&lt;br&gt;</font><font class=txt>valign=bottom</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &lt;/tr&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &lt;tr&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td<font class=att> height</font>=<font class=val>"15"</font>&gt;</font><font class=txt>Normal</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td<font class=att> rowspan</font>=<font class=val>"2"</font><font class=att> align</font>=<font class=val>"right"</font><font class=att> bgcolor</font>=<font class=val>"#aaaaaa"</font><font class=att> border</font>=<font class=val>"0"</font>&gt;</font><font class=txt>rowspan=2</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td<font class=att> border</font>=<font class=val>"0"</font>&gt;</font><font class=txt>border=0</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &lt;/tr&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &lt;tr&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td&gt;</font><font class=txt>Normal</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td&gt;</font><font class=txt>Normal</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td&gt;</font><font class=txt>Normal</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td<font class=att> rowspan</font>=<font class=val>"3"</font><font class=att> valign</font>=<font class=val>"top"</font><font class=att> bgcolor</font>=<font class=val>"#CC3366"</font>&gt;</font><font class=txt>rowspan=3</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td&gt;</font><font class=txt>Normal</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &lt;/tr&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &lt;tr<font class=att> bgcolor</font>=<font class=val>"#cccccc"</font>&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td&gt;</font><font class=txt>Normal</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td<font class=att> colspan</font>=<font class=val>"3"</font><font class=att> align</font>=<font class=val>"center"</font>&gt;</font><font class=txt>align center, colspan=3</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td&gt;</font><font class=txt>Normal</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &lt;/tr&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &lt;tr&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td<font class=att> align</font>=<font class=val>"right"</font><font class=att> valign</font>=<font class=val>"bottom"</font>&gt;</font><font class=txt>align=right</font><font class=key>&lt;br&gt;</font><font class=txt>valign=bottom</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td&gt;</font><font class=txt>Normal</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td&gt;</font><font class=txt>&amp;nbsp;</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td&gt;</font><font class=txt>Normal</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &nbsp; &lt;td<font class=att> height</font>=<font class=val>"20"</font>&gt;</font><font class=txt>height=20</font><font class=key>&lt;/td&gt;</font><br>
+&nbsp; <font class=key>&nbsp; &lt;/tr&gt;</font><br>
+&nbsp; <font class=key>&lt;/table&gt;</font><br>
+<font class=key>MYTABLE</font>;<br>
+<font class=att>define</font>(<font class=val>'FPDF_FONTPATH'</font>,<font class=val>'font/'</font>);<br>
+<font class=att>require</font>(<font class=val>'pdftable.inc.php'</font>);<br>
+<font class=var>$p</font> = <font class=key>new</font> <font class=func>PDFTable</font>();<br>
+<font class=var>$p</font>-><font class=func>AddPage</font>();<br>
+<font class=var>$p</font>-><font class=func>setfont</font>(<font class=val>'times'</font>,<font class=val>''</font>,<font class=val>12</font>);<br>
+<font class=var>$p</font>-><font class=func>htmltable</font>(<font class=var>$html</font>);<br>
+<font class=var>$p</font>-><font class=func>output</font>(<font class=val>''</font>,<font class=val>'I'</font>);<br>
+<font class=att>?></font>
+</td></tr></table>
+<table border=0 width=100% cellpadding="4">
+<tr><td>Result in my browser (opera 7.5):</td></tr>
+<tr><td align=center><img src="example.gif"></td></tr>
+<tr><td>Result in your browser:</td></tr>
+<tr><td align=center>
+<table border=1 align=center>
+  <tr> 
+    <td rowspan=2 valign=middle border=0>rowspan=2, valign=middle</td>
+    <td>Normal</td>
+    <td>Normal</td>
+    <td>Normal</td>
+    <td colspan=2 rowspan=2 valign=bottom bgcolor=#FF00FF>colspan=2<br>rowspan=2<br>valign=bottom</td>
+  </tr>
+  <tr> 
+    <td height=15>Normal</td>
+    <td rowspan=2 align=right bgcolor=#aaaaaa border=0>rowspan=2</td>
+    <td border=0>border=0</td>
+  </tr>
+  <tr> 
+    <td>Normal</td>
+    <td>Normal</td>
+    <td>Normal</td>
+    <td rowspan=3 valign=top bgcolor=#CC3366>rowspan=3</td>
+    <td>Normal</td>
+  </tr>
+  <tr bgcolor=#cccccc> 
+    <td>Normal</td>
+    <td colspan=3 align=center>align center, colspan=3</td>
+    <td>Normal</td>
+  </tr>
+  <tr> 
+    <td align=right valign=bottom>align=right<br>valign=bottom</td>
+    <td>Normal</td>
+    <td>&nbsp;</td>
+    <td>Normal</td>
+    <td height=20>height=20</td>
+  </tr>
+</table>
+</td></tr>
+<tr><td>Result in file pdf: <a href="example.pdf">example.pdf</a>
+(Note: HTML dosen't support <font class=att>border</font><font class=htm>=</font><font class=val>'0'</font>
+for each <font class=key>&lt;td></font>)</td></tr>
+</table>
+<h2>Example 2</h2>
+This file has a long table wrote on 3 pages: <a href="example2.pdf">example2.pdf</a>
+<h2>Example 3</h2>
+File with some fonts, colors, styles and Vietnamese font: <a href="example3.pdf">example3.pdf</a>
+<h2>Source</h2>
+Dowload here: <a href="pdftable_1.5.zip">pdftable v1.5</a> (~159KB)
