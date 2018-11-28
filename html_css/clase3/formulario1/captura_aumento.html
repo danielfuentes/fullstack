@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>trabajando con Formulario</title>
+    <!--<link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">-->
+  
+</head>
+
+<body>
+<form  class="form-group" action="Calculo_Aumento.php" method="post" name="Captura_Aumento" target="_blank">
+<table width="77%" border="6" align="center" bordercolor="#000066" bgcolor="#FFFFCC">
+  <tr>
+    <th width="30%" scope="row"><div align="left">DNI:</div></th>
+    <td width="70%"><input name="cedula" type="text" id="cedula" size="12" maxlength="12" /></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Nombre:</div></th>
+    <td><input class="form-control" name="nombre" type="text" id="nombre" size="30" maxlength="30" /></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Apellido:</div></th>
+    <td><input class="form-control" name="apellido" type="text" id="apellido" size="30" maxlength="30" /></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Sexo:</div></th>
+    <td>
+        
+        <input class="form-check-input" type="radio" name="sexo" value="Masculino" />
+        <label> Masculino</label>
+      <br />
+      
+        <input class="form-check-input" type="radio" name="sexo" value="Femenino" />
+        <label>Femenino</label>  
+      <br />
+      
+        <input class="form-check-input" type="radio" name="sexo" value="Otro" />
+        <label>Otro</label>
+        <br>
+        <label></label></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Educaci&oacute;n Culminada: </div></th>
+    <td><label>
+      <input class="form-check-input" name="primaria" type="checkbox" id="primaria" value="Primaria" />
+      Primaria 
+      <input class="form-check-input" name="secundaria" type="checkbox" id="secundaria" value="Secundaria" />
+      Secundaria 
+      <input class="form-check-input" name="universitaria" type="checkbox" id="universitaria" value="Universitaria" />
+      Universitaria 
+      <input class="form-check-input" name="postgrado" type="checkbox" id="postgrado" value="Post-Grado" />
+      Post-Grado</label></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Departamento:</div></th>
+    <td><label>
+      <select class="form-control" name="departamento[]" size="1" id="departamento[]">
+        <option>SISTEMAS</option>
+        <option>RECURSO HUMANOS</option>
+        <option>CONTABILIDAD</option>
+        <!--ESto es interesante para que vean como antes se tenía que acentuar las palabras-->
+        <option>ADMINISTRACI&Oacute;N</option>
+        <option>FINANZAS</option>
+      </select>
+    </label></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Sueldo:</div></th>
+    <td><label>
+      <input class="form-control" name="sueldo" type="text" id="sueldo" size="20" maxlength="20" />
+    </label></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Porcentaje de Aumento: </div></th>
+    <td><label>
+      <input class="form-control" name="aumento" type="text" id="aumento" size="3" maxlength="3" />
+    </label></td>
+  </tr>
+  <tr>
+    <th scope="row"><div align="left">Observaciones:</div></th>
+    <td><label>
+      <textarea id="textoarea" name="observaciones"  ></textarea>
+    </label></td>
+  </tr>
+  <tr>
+    <th scope="row"><label>
+    <input class="btn btn-primary" type="submit" name="Submit" value="Enviar" />
+    </label></th>
+    <td><label>
+    <input class="btn btn-success" type="reset" name="Submit2" value="Restablecer" />
+    </label></td>
+  </tr>
+</table>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+/*este css esta todo bajo Flexbox
+Para mis alumnos de DH 
+No utilice float por ningun lado
+
+Para que se ubiquen rápido utilce las
+siguientes propiedades bajo Flexbox
+display: flex
+flex-direction:column
+flex-wrap: wrap
+align-content: center
+justify-content: space-around
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+ul{
+    padding: 0;
+}
+body{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+.menu,.enlace {
+    background-color: antiquewhite;
+    display: flex;
+
+}
+
+.encabezado{
+    background-color: burlywood;
+    
+}
+
+.img_encabezado{
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    
+}
+
+.principal{
+    background-color: azure;
+    display: flex;
+
+    
+}
+.seccion1{
+    background-color: burlywood;
+    display: flex;
+
+    
+    
+}
+
+
+.imagen{
+    width: 100%;
+    height: auto;
+
+}
+
+.menu ul li {
+    padding: 10px;
+}
+
+.enlace li{
+    list-style-type: none;
+}
+
+.enlace li a{
+    text-decoration: none;
+}
+
+.enlace a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+.pie{
+    background-color: gray;
+    align-content: center;
+    max-width: 100%;
+}
+
+
+
+.articulo1 .imagen:hover{
+    border: solid 2px mediumslateblue;
+    border-radius: 50%;
+}
+
+.articulo2 .imagen:hover{
+    border: solid 2px blue;
+    border-radius: 50%;
+}
+
+.articulo3 .imagen:hover{
+    border: solid 2px red;
+    border-radius: 50%;
+}
+
+.despues:hover::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f164";
+    margin-left: 5px;
+}
+
+/*Aquí construyo mis Media Queries */
+/*Las referencia de las dimensiones de las
+media queries las tome de la página de
+https://www.getboostrap.com
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+@media (max-width: 992px){
+    .contenedor{
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 768px){
+    .contenedor{
+        max-width: 720px;
+    }
+    
+    .seccion1{
+        flex-wrap: wrap;
+    }
+    .articulo1,.articulo2,.articulo3{
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px){
+    .contenedor{
+        max-width: 540px;
+    }
+    .seccion1{
+        flex-direction: column;
+        
+    }
+    .articulo1,.articulo2,.articulo3{
+        width: 100%;
+    }
+    .menu,.enlace {
+        flex-direction: column;   
+    }  
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+            <form action="contacto.html" method="post">
+                    <fieldset>
+                        <legend>Formulario de Consultas</legend>
+                            <label id="campo">Nombre y Apellido:</label>
+                            <input type="text" name="nombreyapellido" mandatory>
+                        <br>
+                            <label id="campo">Correo Electronico:</label>
+                            <input type="email" name="email" mandatory>
+                        <br>
+                        <label id="campo">Asunto del Mensaje:</label>
+                            <select name="asunto">
+                            <option value="queja">Queja</option>
+                            <option value="felicitacion">Felicitacion</option>
+                            <option value="recomendacion">Recomendacion</option>
+                            </select>
+                        <br>
+                            <label id="campo">Genero:</label>
+                            <label>Masculino</label>
+                            <input type="radio" name="genero" value="Masculino">
+                            <label>Femenino</label>
+                            <input type="radio" name="genero" value="Femenino">
+                            <label>Otro</label>
+                            <input type="radio" name="genero" value="Otro">
+                        <br>
+                            <label id="campo">Pasatiempos:</label>
+                            <label>Pescar</label>
+                            <input type="checkbox" name="hobbies" value="Pescar">
+                            <label>Caza</label>
+                            <input type="checkbox" name="hobbies" value="Caza">
+                            <label>Pescar</label>
+                            <input type="checkbox" name="hobbies" value="Pescar">
+                        <br>
+                            <label id="campo">Comentarios:</label>
+                        <br>
+                            <textarea name="comentarios" mandatory></textarea>
+                        <br>
+                            <button type="submit">Submit</button>
+                            <button type="reset">Borrar</button>
+                    </fieldset>
+                <a href="carta.html"><h2 class="destacado">Volver</h2></a>
+                </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/***** CSS Clase 6***********/
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+body {
+	background-color: yellow;
+}
+
+.cabecera {
+	background-color: #afbacc;
+	height: 150px;
+	width: 100vw;
+	margin-bottom: 50px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #656c77;
+	border: 1px;
+}
+
+.caja-A {
+	background-color: rgb(255, 0, 0);
+	border: 1px solid black;
+	height: 50px;
+	width: 20%;
+	
+}
+
+.caja-B {
+	background-color: rgb(0, 255, 0);
+	border: 1px solid red;
+	width: 66%;
+	height: 50px;
+}
+
+.caja-C {
+	background-color: rgb(0, 0, 255);
+	border: 1px solid red;
+	width: 8%;
+	height: 50px;
+	
+}
+
+/****MEDIA QUERIES *****/
+
+@media (max-width: 900px) {
+	.container {
+		width: 95vw;
+	}
+
+	.caja-A {
+		width: 3%;
+		float: left;
+	}
+	.caja-B {
+		width: 5%;
+		float: right;
+	}
+	.caja-C {
+		width: 100%;
+		clear: both;
+	}
+}
+
+@media (max-width: 450px) {
+	.caja-A {
+		width: 100%;
+		float: none;
+	}
+	.caja-B {
+		width: 100%;
+		float: none;
+	}
+	.caja-C {
+		width: 100%;
+	}
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contactos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+    <body>
+        <fieldset>
+            <h1>Formulario de Consultas</h1><hr>
+            <form action="validar.php" method="POST">
+                <label for="nombreyapellido">Nombre y Apellido
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="text" name="apellido" placeholder="Apellido" required>
+                </label><br><br>
+                <label for="email">Email<br>    
+                    <input type="email" name="correo" placeholder="Email" required>
+                </label><br>
+                <br>
+                <label for="asunto"> Asunto
+                    <select name="asunto" >
+                        <option value="serv">Servicio Técnico</option>
+                        <option value="fact">Facturación</option>
+                        <option value="recla">Reclamos</option>
+                    </select>
+                </label><br>
+                
+                <br>
+                <label for="genero">Género<br>
+                    <input type="radio" name="genero" value="mujer">Mujer 
+                    <input type="radio" name="genero" value="hombre">Hombre
+                </label><br>
+                
+                <br>
+                <label for="hobbi">Pasatiempo<br>
+                    <input type="checkbox" name="pasatiempo" value="programar"> Programar
+                    <input type="checkbox" name="pasatiempo" value="correr"> Correr
+                    <input type="checkbox" name="pasatiempo" value="pintar"> Pintar
+                    <input type="checkbox" name="pasatiempo" value="leer">Leer
+                    <input type="checkbox" name="pasatiempo" value="dormir">Dormir
+                </label><br><br>
+                <label>Comentario<br>
+                    <textarea name="Comentario" required>Indique aquí sus comentarios</textarea>
+                </label><br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+
+            </form>
+        </fieldset> 
+        
+    </body>
+</html>

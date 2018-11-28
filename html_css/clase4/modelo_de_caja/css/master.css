@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    margin: 20px 20px 0px 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.contenedor{
+    width: 1200px;
+    background-color: aqua;
+}
+.encabezado{
+    background-color: burlywood;
+    padding: 10px;
+}
+
+.menu {
+    background-color: antiquewhite;
+}
+.menu ul li {
+    float: left;
+    padding: 10px;
+}
+
+.enlace li{
+    list-style-type: none;
+}
+.enlace li a{
+    text-decoration: none;
+}
+.enlace a:hover{
+    text-decoration: underline;
+}
+.principal{
+    background-color: azure;
+    clear: both;
+}
+.seccion1{
+    background-color: burlywood;
+}
+.articulo1{
+    background-color: cadetblue;
+    width: 400px;
+    height: 550px;
+    float: left;
+    padding: 10px;
+}
+.articulo2{
+    background-color: yellowgreen;
+    width: 400px;
+    float: left;
+    padding: 10px;
+    height: 550px;
+}
+.articulo3{
+    background-color: darkcyan;
+    width: 400px;
+    float: left;
+    padding: 10px;
+    height: 550px;
+}
+
+.pie{
+    background-color: gray;
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.articulo1 .imagen:hover{
+    border: solid 2px mediumslateblue;
+    border-radius: 50%;
+}
+
+.articulo2 .imagen:hover{
+    border: solid 2px blue;
+    border-radius: 50%;
+}
+
+.articulo3 .imagen:hover{
+    border: solid 2px red;
+    border-radius: 50%;
+}

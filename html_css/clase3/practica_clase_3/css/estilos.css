@@ -1,0 +1,59 @@
+body {
+  /*  background-color: aquamarine; */
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../img/fondo.png');
+    background-repeat: repeat;
+
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+.titulo-helados {
+    font-size: 18px;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.destacado {
+    font-size: 28px;
+    color: blue;
+    background-color: rgba(250, 107, 255, 0.8);
+}
+
+.redes {
+    list-style-type: none;
+}
+
+.redes li a img {
+    max-width: 95px;;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    color: black
+}
+label {
+    margin-bottom: 15px;
+}
+
+input:focus {
+    background-color: rgb(238, 163, 135);
+}
+
+textarea:focus {
+    background-color: rgb(183, 236, 236)
+}
+
+img:hover {
+    border-radius: 40px;
+}
+
+.enlacevolver {
+    text-align: center;
+    color: yellow;
+}

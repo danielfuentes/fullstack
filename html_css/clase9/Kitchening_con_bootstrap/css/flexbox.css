@@ -1,0 +1,140 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image:url("../images/bg-body.png");
+	font-family: sans-serif;
+
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*-------------------------------------------------------------------------------------------
+										CABECERA
+-------------------------------------------------------------------------------------------*/
+
+.main-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 15px;
+	width: 100%;
+}
+
+.logo {
+	border-radius: 50%;
+	border: 1px solid black;
+	margin-bottom: 15px;
+	width: 180px;	
+}
+
+.main-nav {
+	display: flex;	
+	width: 100%;
+	justify-content: space-between;
+	margin:15px 0px 10px 0px;
+
+}
+
+.main-nav a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color:white;
+	background-color: black;
+	width: 180px;
+	text-align: center;
+	padding: 15px 0px;
+}
+
+.banner {
+	margin-top: 15px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.banner img{
+	width: 100%;
+}
+
+
+/*-------------------------------------------------------------------------------------------
+										Productos
+-------------------------------------------------------------------------------------------*/
+
+.vip-products {
+	margin-top: 20px;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.product {
+	display:flex;
+	flex-direction: column;
+	width: 30%;
+	margin-bottom: 30px;
+}
+
+.product img {
+	width: 100%;
+}
+
+.product p {
+	text-align: justify;
+}
+
+.product a {
+	align-self: flex-start;
+	color:white;
+	margin-top: 10px;
+	padding:10px;
+	background-color: black;
+	text-decoration: none;
+}
+
+/*-------------------------------------------------------------------------------------------
+										Footer
+-------------------------------------------------------------------------------------------*/
+
+.main-footer {
+	width: 100%;
+}
+
+.footer-nav {
+	padding:50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: darkred;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.main-footer a {
+	border-right: 1px solid white;
+	padding:0px 10px;
+	text-transform: capitalize;
+	color:white;
+	text-decoration: none;
+}
+
+.main-footer a:last-child {
+	border-right: none;
+}
+
+
+@media (max-width: 420px) {
+
+	body {
+		background-image:none;
+		background-color:red;
+	}
+	.flex-container {
+		width: 420px;
+	}
+
+}

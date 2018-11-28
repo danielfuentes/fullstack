@@ -1,0 +1,106 @@
+/* Estilos Craftsy
+======================= */
+
+/* Globales */
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+	
+}
+
+body {
+	background-image: url(../img/bg-2.png);
+	font-family: sans-serif, Verdana, Tahoma;
+}
+
+/* Container */
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* Header */
+header {
+	position: fixed;
+	top:20px;
+	width: 960px;
+	z-index: 999;
+}
+nav {
+	padding: 15px 0;
+}
+.main-nav ul {
+	overflow: hidden;
+	background-color: rgb(239, 76, 39);
+	padding-left: 90px;
+}
+.main-nav li {
+	float: left;
+	margin-right: 30px;
+}
+.main-nav li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 15px 0;
+	display: inline-block;
+}
+.main-nav li a:hover{
+	text-decoration: underline;
+}
+.logo {
+	position: absolute;
+	left: -40px;
+}
+
+/* Main */
+main {
+	background-color: #fff;
+	padding-top: 10px;
+	overflow: hidden;
+	margin-top: 170px;
+}
+
+.producto {
+	position: relative;
+	margin: 10px;
+	width: 300px;
+	float: left
+}
+.flag {
+	position: absolute;
+	top:0;
+	right:20px;
+}
+
+.name {
+	position: absolute;
+	top:30%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.more {
+	position: absolute;
+	bottom: 10%;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: rgba(255, 0, 0, 0.8);
+	padding: 10px 12px;
+	left: 33%;
+}
+
+.more:hover {
+	background-color: rgba(255, 0, 0, 1);
+}

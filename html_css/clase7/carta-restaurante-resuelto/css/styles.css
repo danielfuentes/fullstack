@@ -1,0 +1,172 @@
+/*Estilos main para carta
+=========================== */
+
+/* Globales */
+* {
+	box-sizing: border-box;
+	color: #4a4a4a;
+}
+
+ul {
+	padding-left: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+body {
+	font-family: sans-serif, Verdana, Tahoma;
+}
+
+
+/* Container */
+main {
+	overflow: hidden;
+	margin-bottom: 60px;
+}
+.container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 20px 25px;
+/*background-color: rgba(255, 0, 0, 0.3);
+	Los colores de fondo están todos comentados.*/
+}
+
+
+/* Header */
+header {
+	border-bottom: 1px solid #dcdcdc;
+	/*background-color: rgba(0, 255, 0, 0.3);*/
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+h1 {
+	margin-top: 0;
+}
+
+header h2 {
+	margin-bottom: 0;
+}
+
+
+/* Menú de navegación */
+.main-nav {
+	float: left;
+	/*background-color: rgba(0, 0, 255, 0.3);*/
+	width: 300px;
+}
+
+.main-nav li {
+	list-style-type: none;
+	line-height: 2;
+	font-size: 18px;
+}
+
+.main-nav li a,
+.home,
+.social li a {
+	text-decoration: none;
+}
+
+.main-nav li a:hover,
+.home:hover {
+	color: #ccc;
+}
+
+
+/* Secciones */
+.carta-container {
+	float: right;
+	width: 610px;
+	/*background-color: rgba(100, 130, 0, 0.3);*/
+	padding-left: 20px;
+	border-left: 1px solid #dcdcdc;
+}
+.platos-container {
+	overflow: hidden;
+	padding-left: 10px;
+}
+.ilustracion {
+	float: right;
+	border: 1px solid #dcdcdc;
+	padding: 2px;
+}
+.platos .name {
+	margin-bottom: 0;
+}
+.platos .name:first-child {
+	margin-top:0;
+}
+.platos p {
+	margin-top: 2px;
+}
+
+.home {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+
+/* Footer */
+footer {
+	background-color: #D8D8D8;
+	overflow: hidden;
+	font-size: 18px;
+	padding: 20px;
+}
+
+.footer-container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 254px;
+	margin: 22px;
+}
+
+.social {
+	float: right;
+	margin: 22px;
+}
+
+.social ul {
+	margin: 0;
+}
+
+.social li:first-child {
+	margin-bottom: 20px;
+}
+.social li a {
+	color: #fff;
+}
+.social li a:hover {
+	color: #888;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

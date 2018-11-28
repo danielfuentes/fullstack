@@ -1,0 +1,59 @@
+body {
+      /* Lo visto en las clases 1 y 2*/ 
+      background-image: url(../imagenes/fondo.png);
+      /*
+    La propiedad: contain
+    Escala la imagen al mayor tamaño posible sin recortarla ni estirarla.
+    La propiedad: cover
+    Escala la imagen al mayor tamaño posible sin estirarla. 
+    Si las proporciones de la imagen difieren de las del elemento, 
+    es recortada vertical u horizontalmente para que no quede un espacio vacío.
+     para ver el efecto debe quitarle los comentarios*/
+      /*background-size: cover;*/
+      /*Aquí tambien puede usar la propiedad scroll para que la imagen se 
+      desplace al igual cuando tu hagas scroll*/
+      background-color:aquamarine;
+      /*Note que aunque le coloque este color al fondo no lo veo, pero ojo si esta allí
+      Sólo podra ver si cambia el tamaño a la imagen dispuesta en el fondo*/
+      background-attachment: fixed;
+    }
+h1  {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    color: #ff0000;
+    text-align: center;
+}    
+     /*Puedes revisar este sitio para ampliar la información https://developer.mozilla.org/es/docs/Web/CSS/color_value*/
+ul 
+     {
+      /* Pueden acceder a este sitio y jugar un poco con los colores RGB RGBA y Hexadecimal https://developer.mozilla.org/es/docs/Web/CSS/CSS_Colors/Herramienta_para_seleccionar_color*/ 
+      color: 233 21 21 0.47;
+      align-content: center;
+     }
+ol 
+     {
+      color:magenta;
+     }
+     /*Aquí aplico css pero sólo al elemento con id "etiqueta"  del html*/
+#etiqueta{
+       color: forestgreen;
+       text-align: center;
+
+     }
+    /*De acuerdo a lo visto en la clase 2, voy a crear una clase llamada
+    ".destacado" para luego aplicarla a lo que yo desee, recuerde que en el 
+    html debe colocar a que elemento desea colocarle la clase*/ 
+.destacado{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ff0000;
+    text-align: center;
+    background-color: aqua;
+    border-radius: 2%;
+    }
+/*Aquí podran ver como le aplico css desendente a mis elementos*/
+ul ol li{
+    font-family: fantasy;
+    font-size: 20px;
+    text-decoration: underline;
+
+}

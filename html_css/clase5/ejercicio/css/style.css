@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 960px;
+    background-image: url(../img/bg-2.png);
+    height: auto;
+    background-repeat: repeat;
+    margin:0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+.dot-menu a:hover{
+    /* text-decoration: underline; */
+    border-style: solid;
+    border-width:0px 0px 2px 0px;
+    padding-bottom: 3px;
+
+}
+.header{
+    width: 960px;
+    height: 50px;
+    background-color:red;
+    position: fixed;
+    top:50px;
+    left:16.5%;
+    z-index: 3;
+}
+.element-menu{
+    list-style: none;
+    
+}
+.element-menu a{
+    text-decoration: none;
+    color:white;
+    margin-left: 20px;
+}
+.menu{
+    padding-left:50px;
+}
+.dot-menu{
+    float:left;
+}
+.main{
+    clear: both;
+    position: relative;
+    top:150px;
+    z-index: 2;
+    background-color: white;
+    width: 960px;
+    left:30px;
+}
+.img-logo, .menu{
+    float: left;
+}
+.img-logo{
+    position: absolute;
+    top:-25px;
+    left:-10px;
+}
+/* .fix{
+    position: relative;    
+} */
+
+.articulos{
+    float: left;
+    width: 300px;
+    border:white 10px solid;
+    position: relative;
+}
+.etiqueta{
+    position: absolute;
+    right: 10px;
+    top:0px;
+
+}
+.text{
+    position:absolute;
+    left:0px;
+    top:60px;
+    background-color: rgba(0, 0, 0, 0.301);
+    color:white;
+    width:300px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.articulos a{
+    position:absolute;
+    left:100px;
+    top:90px;
+    color:white;
+    text-decoration:none;
+}
+.boton{
+    width: 100px;
+    background-color: red;
+    height: 25px;
+    padding-top: 5px;
+}
+.boton:hover{
+    background-color: rgb(73, 0, 0);
+}

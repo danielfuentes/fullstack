@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Estimados amigos, este archivo se los envío sólo para que logren visualizar 
+  la sintaxis de los diversos tag vistos en las clases 1 y 2. 
+-->
+<html>
+ <head>
+   <meta charset="UTF-8">
+   <title>Mi primera página web</title>
+   <!-- Aquí podran ver que he incorporado los estilos css en el mismo archivo html
+    Recuerden lo visto en la clase 1. Como pueden notar el css está interno en el html
+   --> 
+   <style>
+     body 
+     {
+      /* Lo visto en las clases 1 y 2*/ 
+      background-image: url(imagen/fondo.png);
+      background-attachment: fixed;
+      background-color:aquamarine;
+      align-content: center;
+     }
+     h1 
+     {
+      color:black;
+     }
+     p 
+     {
+      color: #ff0000;
+     }
+     /*Puedes revisar esta sitio para ampliar la información https://developer.mozilla.org/es/docs/Web/CSS/color_value*/
+     ul 
+     {
+      /* Pueden acceder a este sitio y jugar un poco con los colores RGB RGBA y Hexadecimal https://developer.mozilla.org/es/docs/Web/CSS/CSS_Colors/Herramienta_para_seleccionar_color*/ 
+      color: 233 21 21 0.47;
+      align-content: center;
+     }
+     ol 
+     {
+      color:magenta;
+     }
+     #etiqueta{
+       color:brown;
+
+     }
+   </style>
+ </head>
+ <body>
+    <h1 align = "center"> Digital House</h1>
+    <hr>
+    <a href="#correo">Envie Correo</a> <!--Esto es sólo para que vean lo de los enlaces internos-->
+   <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+   <br>
+   <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+   <br>
+   <ul type = "square"> 
+     <li>Papel</li>
+     <li>Tinta</li>
+     <li>Toner</li>
+   </ul>
+   <br>
+   <ol type = "A">
+    <li>Enero</li>
+    <li>Febrero</li>
+    <li>Marzo</li>
+   </ol>
+   <!--Esto es un tag semantico, aun no lo hemos visto, así que o se preocupen por eso-->
+   <section>
+    <div>   <!--Esta es la etiqueta DIV que indico Rodolfo en clases la cual no es prudente usarla mucho
+    Yo la estoy utilizando ya que esto es un archivo creado para ustedes con fines académicos--> 
+      <!--Para que se puedan ver las imagenes usted debe colocar las que usted desee y listo-->
+      <!--Enlaces colocados sobre imagenes-->
+      <a title="MSc. Angel Daniel Fuentes" href="htps://adanielf.wordpress.com" target="_blank"><img src = "daniel2.jpg" alt = "Daniel Fuentes"/></a>
+    </dv>
+    <div id="correo" style="background-color:thistle"> <!--La otra forma de colocar estilos a nuestros documentos, clase 1-->
+      <!-- Como colocar el envio de correos en nuestros HTML Clase 2-->
+      <a href="mailto:dfuentes@digitalhouse.com" ?subject= "Esto es sólo una prueba del asunto del correo">Contactame</a>
+      
+    </div>
+    <div>
+      <a href="tel:+5491136238017" id="telefono"> Llame ya!</a>
+    </div>
+  </section>
+<div>
+    <!--Como colocar videos en nuestros HTML, Clase 2 Ojo: El video lo debemos tener en nuestro PC
+    https://developer.mozilla.org/es/docs/Web/HTML/Usando_audio_y_video_con_HTML5
+    -->  
+
+    <video witdh = 480 title = "Seguridad de la Información" 
+      src="video/seguridad.mp4" controls poster="imagen/portadavideo.jpg" >
+     </video>    
+</div>
+<div>
+    <h3>Este es el control del audio que se esta reproduciendo de forma automática</h3>
+    <audio src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg" controls autoplay>
+    
+</audio>
+</div>
+ <a name="daniel"></a>   <!-- En un tiempo se utilizo esta forma para crear las anclas-->
+ <h3 id="etiqueta" >Verificando el css usando el id del elemento</h3>
+ </body>	
+</html>

@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    
+
+    
+}
+ul, ol{
+    padding: 0;
+}
+body{
+    text-align: center;
+    /*En responsive, ya no uso px*/
+    /*margin: 20px 20px 0px 60px;*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    
+}
+.contenedor{
+    /*Aquí ya no mas px y quiten el comentario a % para que 
+    vean el efecto - jugar colocando y quitando los valores*/
+    max-width: 1200px;
+    /*max-width: 100%;*/
+    /*max-width: 100vw;*/
+    
+    /*background-color: aqua;*/
+    /*Le coloque este relleno para que se vea diferente*/
+    padding: 10px;
+    margin: 0 auto;
+
+    
+}
+.encabezado{
+    background-color: burlywood;
+    padding: 10px;
+    
+}
+
+.menu {
+    background-color: antiquewhite;
+}
+.menu ul{
+    overflow: hidden;
+}
+.menu ul li {
+    float: left;
+    padding: 10px;
+    
+    
+}
+
+.enlace li{
+    list-style-type: none;
+}
+.enlace li a{
+    text-decoration: none;
+}
+.enlace a:hover{
+    text-decoration: underline;
+}
+.principal{
+    background-color: azure;
+    clear: both;
+}
+.seccion1{
+    background-color: burlywood;
+}
+.articulo1,.articulo2,.articulo3{
+    min-height: 600px;
+    overflow: hidden;
+}
+.articulo1{
+    background-color: cadetblue;
+    /*Cambiar*/
+    width: 33.33%;
+    /*max-width: 33%;*/
+    
+    /*height: 550px;*/
+    height: auto;
+    float: left;
+    padding: 10px;
+    
+}
+.articulo2{
+    background-color: yellowgreen;
+    /*Cambiar*/
+    width: 33.33%;
+    
+    float: left;
+    padding: 10px;
+    /*height: 550px;*/
+    
+    
+}
+.articulo3{
+    background-color: darkcyan;
+    /*Cambiar*/
+    width: 33.33%;
+    /*max-width: 34%;*/
+    
+    float: left;
+    padding: 10px;
+    /*height: 550px;*/
+    
+    
+}
+
+.pie{
+    background-color: gray;
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 100%;
+}
+img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.articulo1 .imagen:hover{
+    border: solid 2px mediumslateblue;
+    border-radius: 50%;
+}
+
+.articulo2 .imagen:hover{
+    border: solid 2px blue;
+    border-radius: 50%;
+}
+
+.articulo3 .imagen:hover{
+    border: solid 2px red;
+    border-radius: 50%;
+}
+
+.despues:hover::after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f164";
+    margin-left: 5px;
+}
+
+/*Aquí construyo mis Media Queries 
+Empezando por dispositivos mas pequeños*/
+@media (max-width: 992px){
+    .contenedor{
+        max-width: 960px;
+    }
+
+    
+
+@media (max-width: 768px){
+    .contenedor{
+        max-width: 720px;
+    }
+    .articulo1,.articulo2,.articulo3{
+        width: 50%;
+     
+    }
+}
+@media (max-width: 576px){
+    .contenedor{
+        max-width: 540px;
+    }
+    .articulo1,.articulo2,.articulo3{
+        width: 100%;
+        float: none;
+     
+    }
+  
+    .menu ul li {
+        float: none;
+        
+    }        
+}
+
+
+

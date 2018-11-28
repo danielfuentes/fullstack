@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    border: solid 5px red;
+}
+
+.encabezado{
+    width: 1320px;
+    border: solid 5px mediumseagreen;
+    padding: 20px;
+    background-color: white;
+    /*position: fixed;*/
+    /*z-index: 200;*/
+}
+
+img {
+    width: 300px;
+}
+
+.seccion1{
+    background-color: #53CAFF;
+    
+    
+}
+
+.seccion2{
+    background-color:#4285F4;
+    height: 500px;
+}
+
+.caja {
+  
+  text-align: center;
+  /*display: inline-block;*/
+  /*display: inline;*/
+  /*float: left;*/
+  
+  width: 300px;
+  height: 300px;
+  background:#53CAFF;
+  color: white;
+  padding: 50px;
+  border: solid 15px;
+  text-transform: uppercase;
+  box-shadow: #34A853;
+  
+  
+}
+
+
+#dos {
+  /*Quite el comentario a una y se lo coloca a las otras y vea lo que pasa*/  
+  /*position: absolute;*/
+  /*position: relative;*/
+  /*position: fixed;*/
+  /*position: static;*/
+  /*position: sticky;*/
+  
+  top: 135px;
+  left: 510px;
+  background: #EA4335;
+  /*Quite el comentario y observe lo que pasa*/
+  /*float: left;*/
+  
+}
+
+#uno{
+  
+    background: #4285F4;
+
+}
+#tres{
+  
+    background: #FBBC05;
+    /*position: absolute;*/
+    /*top: 135px;*/
+    /*left: 1026px;*/
+
+    
+
+}
+#cuatro{
+    position: relative;
+    background: #4285F4;
+    z-index: 200;
+    
+}
+#cinco{
+  
+    background: #34A853;
+    position: relative;
+    /*position: fixed;*/
+    /*top: 135px;*/
+    /*left: 1026px;*/
+    bottom: 300px;
+    z-index: 300;
+    
+}

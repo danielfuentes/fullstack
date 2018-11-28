@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+    background: #333333;
+}
+
+article {
+    float: left;
+    background: #ffffff;
+    padding: 15px;
+    height: auto;
+    /*Aquí puedes jugar con esto para que veas como se desborda todo
+    al pasar la medida que tolera el ancho de la pagina
+    recuerda que el margen se suma aunque tengas box-sizen:border-bor
+    lo que es el padding y el border no se suma, este se suma por
+    dentro del elemento*/
+/*    width: 31%;*/
+    /*Como pueden notar todo lo estoy trabajando con %
+    de esta forma apoyo al trabajo responsive*/
+    margin: 1%;
+    
+    
+}
+
+img{
+    max-width: 100%;
+}
+/*Aquí le incorporé lo de la clase 7 para que mis 
+alumnos vean como se puede utilizar el pseudo elemento 
+::after ó ::before*/
+p.chevrolet:hover::after{
+    content: url(../imagenes/logo_chevrolet.jpg); 
+       
+}
+p.ford:hover::after{
+    content: url(../imagenes/logo_ford.jpg); 
+   
+}
+
+p.toyota:hover::after{
+    content: url(../imagenes/logo_toyota.jpg); 
+}
+/*Al final de mi css escribo mis medias queries*/
+@media (min-width:320px){
+    body{
+        background: green;
+
+    }
+    article {
+        width: 100%;
+    }
+}
+
+@media (min-width:720px){
+    body{
+        background: blue;
+    }
+    article {
+        /*Aqui pueden ver como le resto el margen de 1% de cada lado
+        Varien esto o jueguen con esto para que vean el efecto*/
+        width: 48%;
+    }
+}
+@media (min-width:1200px){
+    body{
+        background:red;
+    }
+    article {
+        width: 31%;
+    }
+}

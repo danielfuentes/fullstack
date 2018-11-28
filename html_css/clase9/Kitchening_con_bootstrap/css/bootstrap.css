@@ -1,0 +1,173 @@
+body {
+	background-image:url("../images/bg-body.png");
+	font-family: sans-serif;
+
+}
+
+
+/*HEADER*/
+
+.main-header {
+	margin-top: 15px;
+}
+.logo {
+	border-radius: 50%;
+	border: 1px solid black;
+	margin-bottom: 15px;
+}
+
+.main-nav {
+	margin-top: 15px;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.main-nav a {
+	width: 180px;
+	padding:10px 16px;
+	background-color: black;
+	color:white;
+	text-align: center;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+.main-nav a:hover{
+	background-color: grey;
+}
+
+
+.banner {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.banner img {
+	width: 100%;
+}
+
+
+
+/*MAIN*/
+
+.vip-products {
+	margin-top: 15px;
+
+}
+
+.product {
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.product img {
+	width: 100%;
+}
+
+.product h2 {
+	margin-top: 20px;
+}
+
+.product p {
+	margin-top: 20px;
+	text-align: justify;
+}
+
+.product a {
+	align-self: flex-start;
+	margin-top:15px;
+	padding:8px 12px;
+	background-color: black;
+	text-decoration: none;
+	color:white;
+}
+
+.product a:hover {
+	background-color: grey;
+}
+
+
+/*FOOTER*/
+
+.footer-nav {
+	flex-direction: row;
+	justify-content: center;
+	background-color: darkred;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;	
+}
+
+.footer-nav a {
+	padding:0px 10px;
+	color:white;
+	border-right: 2px solid white;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+.footer-nav a:last-child{
+	border-right: none;
+}
+
+
+@media (max-width: 575px) {
+
+	.menu-button a{
+		width: 10%;
+		padding:10px;
+		border-radius:10px;
+		background-color: black;
+		text-decoration: none;
+		color:white;
+}
+	.menu-button a:hover{
+		background-color: grey;
+	}
+
+
+	.main-nav {
+		flex-direction: column;
+	}
+
+	.main-nav a {
+		width: 100%;
+		border-bottom: 2px solid white;
+	}
+
+	.main-nav a:hover{
+		background-color: grey;
+	}
+
+	.banner {
+		display: none;
+	}
+
+	.footer-nav {
+		padding:0;
+		flex-direction: column;
+		border-top-right-radius: 0px;
+		border-top-left-radius: 0px;
+	}
+
+	.footer-nav a {
+		border-bottom: 2px solid white;
+		padding:10px;
+		text-align: center;
+		border-right: none;
+	}
+
+	.footer-nav a:hover {
+		background-color:grey;
+	}
+}
+
+@media (min-width: 576px) {
+	.menu-button {
+		display: none;
+	}
+
+
+}

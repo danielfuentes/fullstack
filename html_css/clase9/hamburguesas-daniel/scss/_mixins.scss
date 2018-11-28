@@ -1,0 +1,41 @@
+// border-radius
+@mixin b-ra($radius){
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+}
+
+// box-shadow
+@mixin b-sh($h-off, $v-off, $blur, $color){
+	box-shadow: $h-off $v-off $blur $color;
+	-webkit-box-shadow: $h-off $v-off $blur $color;
+}
+
+// transition
+@mixin ttion($ttime){
+	transition: $ttime;
+	-ms-transition: $ttime;
+	-webkit-transition: $ttime;
+}
+
+// spin
+@mixin spin($deg){
+	transform: rotate($deg);
+	-ms-transform: rotate($deg);
+	-webkit-transform: rotate($deg);
+}
+
+// escale
+@mixin scale($scale){
+	transform: scale($scale);
+	-ms-transform: scale($scale);
+	-webkit-transform: scale($scale);
+}
+
+// clearfix
+@mixin clearfix{
+	&:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+}

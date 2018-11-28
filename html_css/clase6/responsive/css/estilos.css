@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 0px auto;
+}
+body{
+    background: #333333;
+    margin: 0px;
+}
+
+.encabezado{
+    /*Aquí dispongo varios elemntos, sólo para que ustedes
+    ejecuten los cambios que deseen y así verifican el
+    funcionameinto*/
+    background: #ffffff;
+    position: fixed;
+    z-index: 999;
+    border: solid #E9E9E9;
+    width: 100%;
+}
+.bienvenida{
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    
+}
+.animacion{
+    position: relative;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    animation-direction: initial;
+    animation-iteration-count: infinite;
+    
+}
+
+article {
+    position: relative;
+    top: 150px;
+    float: left;
+    background: #ffffff;
+    padding: 15px;
+    height: 600px;
+    padding: 10px;
+    /*Aquí puedes jugar con esto para que veas como se desborda todo
+    al pasar la medida que tolera el ancho de la pagina
+    recuerda que el margen se suma aunque tengas box-sizen:border-bor
+    lo que es el padding y el border no se suma, este se suma por
+    dentro del elemento*/
+/*    width: 31%;*/
+    /*Como pueden notar todo lo estoy trabajando con %
+    de esta forma apoyo al trabajo responsive*/
+    margin: 1%;
+    
+    
+}
+
+/*Aquí le incorporé algunos elementos visuales de transition*/
+/*Para poder ver los efectos debe quitarle los comentarios, además le indico que mas abajo hago lo mismo pero usando animación, para ver su funcionamiento, debe tener la transición en comentario y la animación no o viceversa*/
+
+/*Las propiedades de transición que hacen posible este efecto son:
+
+    transition-property– indica qué propiedades CSS van a alterarse. La palabra clave “all” hace que todas las propiedades susceptibles de animación se modifiquen cuando cambie su estado. El valor por defecto es “all”.
+    transition-duration– el tiempo, medido en segundos o milisegundos, de la transición, comenzando después de un valor de retardo (“transition-delay”). El valor por defecto es cero, lo que significa que la transición es inmediata.
+    transition-delay– el tiempo, medido en segundos o milisegundos, tras el cual se modifica el valor antes de que empiece la transición. El tiempo puede ser negativo, en cuyo caso la transición comienza en un punto más avanzado de su línea de tiempo. El valor por defecto es cero.
+    transition-timing-function– indica de qué forma se deben calcular los valores intermedios de la transición. Esto nos permite regular la velocidad del cambio a lo largo del tiempo que dura la transición. La función subyacente es una curva de Bezier cúbica; las palabras clave se corresponden con funciones habituales. El valor por defecto es “ease”, una función que comienza rápidamente y se va haciendo cada vez más lenta hacia el final.*/
+
+
+/*Para ver la transción quite los comentarios de abajo*/    
+/*img {
+    max-width: 100%;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 2s;
+    transition-delay: 0s;
+    transition-timing-function: linear;
+}
+
+img:hover {
+
+    opacity: 0.5;
+
+}*/
+/*Hasta aquí*/
+
+
+/*Las Animaciones de CSS3 son conceptualmente similares a las transiciones, ya que en ambos casos van modificando gradualmente un valor CSS a lo largo de la línea de tiempo. Las diferencias están, primero, en la forma en que se indican las propiedades de la animación; segundo, en la forma en que se disparan y tercero, la complejidad de las animaciones que podemos crear.
+
+Las animaciones se declaran utilizando reglas de “keyframes” dentro del código CSS. Una regla de keyframes sencilla que viene a reproducir el efecto de desvanecimiento que hemos visto en el ejemplo anterior de transición sería más o menos así:*/
+
+@keyframes
+
+animacion {
+
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
+
+}
+
+/*Aplicamos esta regla a nuestra imagen con este fragmento CSS:
+    animation-fill-mode – El valor “forwards” de esta propiedad significa que debe mantener los valores de propiedad indicados en “to” una vez llega al final de la animación avanzando en la línea de tiempo. El valor por defecto de esta propiedad es “none”, que hace que las propiedades vuelvan a sus valores previos a la animación una vez termina el proceso. (Se puede construir este mismo código CSS de ejemplo sin utilizar el valor animation-fill-mode. Basta con añadir “opacity: 0;” a la regla img:hover para mantener el valor de opacidad final a cero.)
+    animation-name – informa del qué animación (identificada por su nombre) se desarrollará como consecuencia del evento. Cuando se indica un valor en la propiedad animation-name primero se ejecuta la cuenta atrás definida por el valor animation-delay. Cuando esta cuenta llega a cero, empieza la animación propiamente dicha y lo hace durante el tiempo indicado por el valor animation-duration. El valor de animation-timing-function es el mismo que transition-timing-function descrito antes.
+*/
+
+
+img {
+    max-width: 100%;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-timing-function: linear;;
+    animation-fill-mode: forwards;
+}
+
+img:hover {
+
+    animation-name: animacion;
+
+}
+
+/*Aquí le incorporé lo de la clase 7 para que mis 
+alumnos vean como se puede utilizar el pseudo elemento 
+::after ó ::before*/
+p.chevrolet:hover::after{
+    content: url(../imagenes/logo_chevrolet.jpg); 
+       
+}
+p.ford:hover::after{
+    content: url(../imagenes/logo_ford.jpg); 
+   
+}
+
+p.toyota:hover::after{
+    content: url(../imagenes/logo_toyota.jpg); 
+}
+/*Al final de mi css escribo mis medias queries*/
+/*Aquí les hago diversos modos de uso bien sea con 
+min-width ó con max-width y también usando los 
+operadores lógicos*/
+
+/*Deben estar atentos en el orden de como construyen 
+las media queries, bien sea usando el min-width o el 
+max-width*/
+
+/*Si va a utilizar el max-width como punto de quiebre 
+entonces trate de disponerlo desde el punto de quiebre mas 
+alto al mas bajo, ahora bien si va a utilizar min-width
+entonces debe disponer los puntos de quiebre desde el
+mas pequeño al mas grande */
+
+/*Aquí realice ajustes y estoy usando el max-width*/
+/*esta medida es como para un televisor*/
+@media (max-width:1366px){
+    body{
+        background:red;
+    }
+    article {
+        width: 31%;
+    }
+}
+/*Esta medida es como para una laptop*/
+@media (max-width:900px){
+    body{
+        background:red;
+    }
+    article {
+        width: 31%;
+    }
+}
+
+/*Una medida como una laptop mediana, note que estoy 
+controlando la disposición del dispositivo*/
+@media (max-width: 768px) and (orientation: portrait){
+    body{
+        background: blue;
+    }
+    article {
+        /*Aqui pueden ver como le resto el margen de 1% de cada lado
+        Varien esto o jueguen con esto para que vean el efecto*/
+        width: 48%;
+    }
+}
+
+/*Una medida como una laptop mediana*/
+@media (max-width:750px){
+    body{
+        background: blue;
+    }
+    article {
+        /*Aqui pueden ver como le resto el margen de 1% de cada lado
+        Varien esto o jueguen con esto para que vean el efecto*/
+        width: 48%;
+    }
+}
+
+@media (max-width:360px) {
+    body{
+        background: green;
+
+    }
+    article {
+        width: 100%;
+    }
+}
+
+
+/*Esta medida es como para un Sansung Galaxy S7*/
+@media (max-width:360px) {
+    body{
+        background: green;
+
+    }
+    article {
+        width: 100%;
+    }
+}
+
+/*OJO- PENDIENTE - NO SE LE OLVIDE - AH JAAAAA
+Si va a utilizar min-width entonces debe disponer 
+los puntos de quiebre desde el mas pequeño al mas grande*/
+
+
+

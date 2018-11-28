@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <!--para agregar una "regla de estilo", de tipo CLASE, en los siguientes 5 parrafos, simplemente se agrega el atributo class a los tags P que necesitemos-->
+        <h1>Titulo principal</h1>
+
+        <h3>Observar los parrafos destacados</h3>
+        <p class="destacado">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas soluta, enim accusamus tempora quibusdam vitae illo maiores repellat iure quo esse. Qui commodi itaque voluptatem rem, ullam inventore ipsa aliquam?</p>
+
+        <p class="destacado">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas soluta, enim accusamus tempora quibusdam vitae illo maiores repellat iure quo esse. Qui commodi itaque voluptatem rem, ullam inventore ipsa aliquam?</p>
+
+        <!--El parrafo siguiente no cuenta con class="destacado", por ende no va a tomar los atributos de la clase definida en nuestro archivo estilos.css-->
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas soluta, enim accusamus tempora quibusdam vitae illo maiores repellat iure quo esse. Qui commodi itaque voluptatem rem, ullam inventore ipsa aliquam?</p>
+
+        <p class="destacado">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas soluta, enim accusamus tempora quibusdam vitae illo maiores repellat iure quo esse. Qui commodi itaque voluptatem rem, ullam inventore ipsa aliquam?</p>
+
+        <p class="destacado">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas soluta, enim accusamus tempora quibusdam vitae illo maiores repellat iure quo esse. Qui commodi itaque voluptatem rem, ullam inventore ipsa aliquam?</p>
+    </main>
+</body>
+</html>

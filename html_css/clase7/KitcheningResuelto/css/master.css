@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+}
+body{
+    background-image: url(../images/bg-body.png)
+}
+li{
+    list-style-type: none;
+}
+.main-header .main-footer{
+    text-align: center;
+}
+.main-header img{
+    border-radius: 50%;
+    width: 180px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.container{
+    margin: 0 auto;
+    max-width: 768px;
+    padding-top: 20px;
+}
+.main-nav a, .main-footer a{
+    text-decoration: none;
+    float: left;
+}
+
+.toggle-nav{
+    display: block;
+
+}
+ul a{
+    float: left;
+}

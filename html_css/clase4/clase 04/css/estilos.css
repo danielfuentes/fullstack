@@ -1,0 +1,142 @@
+body {
+  /*  background-color: aquamarine; */
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../img/fondo.png');
+    background-repeat: repeat;
+    margin: 10;
+    padding: 0;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+.titulo-helados {
+    font-size: 18px;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.destacado {
+    font-size: 28px;
+    color: blue;
+    background-color: rgba(250, 107, 255, 0.8);
+}
+
+.redes {
+    list-style-type: none;
+}
+
+.redes li a img {
+    max-width: 95px;;
+}
+
+strong {
+    font-size: 30px;
+}
+
+em {
+    color: red;
+}
+input:focus {
+    background-color: greenyellow;
+}
+
+#socialicon:hover {
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px greenyellow;
+    -webkit-box-shadow: 0px 0px 15px 15px greenyellow;
+}
+
+#campo {
+    font-weight: 600;
+}
+
+.header {
+    background: lightgreen;
+    width: 960px;
+    padding: 30px;
+    border: dotted 5px;
+    margin: 0% 15% 0% 15%;
+}
+
+.menu {
+    background: lightcoral;
+    width: 960px;
+    padding: 30px;
+    border: dotted 5px;
+    margin: 0% 15% 0% 15%;
+}
+
+.footer {
+    background: lightblue;
+    width: 960px;
+    padding: 30px;
+    border: dotted 5px;
+    margin: 0% 15% 0% 15%;
+}
+
+.section-a {
+    width: 960px;
+    margin: 0% 15% 0% 15%;
+    text-align: center;
+    border: solid 5px red;
+    padding: 30px;
+    border-radius: 5%;
+}
+
+/*Aquí comienza los estilos a mi pagina galeria.html
+Estimado pablo aqui esta la maquetación rudimentaria,
+mas adelante aprenderemos nuevas cosas para todo hacerlo 
+mas facil*/
+
+/*Trate siempre de colocar las clases en el mismo orden
+como tiene el maquetado en el html*/
+.main-container {
+    width: 1220px;
+    padding: 10px;
+}
+
+.section-b {
+    width: 600px;
+    height: 160px;
+    /*Le puede dar color al borde*/
+    border: solid 5px red;
+    border-radius: 5%;
+    padding: 20px;
+    margin-left: 190px;
+    float: left;
+}
+
+.section-c {
+    /*Este pendiente aquí debe tener presente el 
+    tamaño de la imagen*/
+    width: 300px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    padding: 20px;
+    height: 160px;
+    border: solid 5px red;
+    /*Para darle como un redondeo al borde*/
+    border-radius: 5%;
+    float: right;
+    /*esto para que no me aparezca la barra de desplazamiento*/
+    overflow: hidden;
+    /*Aquí centro la imagen*/
+    text-align: center;
+}
+.section-d {
+    /*Aquí debe estar pendiente de las dimensiones de la pagina
+    y el uso de margen - border - padding ya que eso afecta*/
+    width: 920px;
+    margin-left: 200px;
+    border: solid 5px red;
+    padding: 50px;
+    border-radius: 5%;
+    /*Esto permite borrar la flotación de los elementos*/
+    clear: both;
+}
+
+
+

@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding:0;
+    border: 0;
+   
+}
+body{
+    background-color:antiquewhite;
+    font-family: sans-serif;
+    text-align: center;
+    }
+.header{
+    padding-top: 40px;
+    width: 100%;
+    height: 20vh;
+    background-color: red;
+    margin-bottom: 50px;
+   }    
+.contenedor{
+    max-width: 1200px;
+    margin:0 auto;
+    background-color: blue;
+    height: 100vh;
+    
+}    
+.caja-a{
+    width:20.89%;
+    background-color: brown;
+    border: red 1px solid;
+     height: 200px; 
+}
+.caja-b{
+    width:66.7%;
+    background-color: rgb(165, 142, 42);
+    margin:0% 2% 0% 2%;
+    border: red 1px solid;
+}
+.caja-c{
+    width:8.34%;
+    background-color: rgb(101, 165, 42);
+    border: red 1px solid;
+}
+.caja{
+    float: left;
+}
+.titulo{
+    font-size: 1.75em;
+}
+.parrafo{
+    font-size:0.8em; 
+}
+strong{
+    font-size: 0.93em;
+}
+/*Aquí inicio las Media Queries*/
+@media (max-width:900px){
+        .contenedor{
+            max-width: 95%;
+            height: 100vh;
+            padding: 10px;
+            background-color: RED;
+        }   
+        .caja-a{
+            width:40%;
+            float: left;
+        }
+        .caja-b{
+            width:55%;
+            margin:0% 0% 0% 0%;
+            float: right;
+            
+        }
+        .caja-c{
+            width:100%;   
+        }
+        
+
+
+    }
+
+    @media (max-width:450px){
+        .contenedor{
+            max-width: 95%;
+            overflow: hidden;
+            padding: 10px;
+            background-color: RED;
+        }   
+        .caja-a{
+            width:100%;
+            float: left;
+        }
+        .caja-b{
+            width:100%;
+            margin:0% 0% 0% 0%;
+            float: right;
+            
+        }
+        .caja-c{
+            width:100%;   
+        }
+        body{
+            font-size: 1.1em;
+        }
+        
+
+
+    }

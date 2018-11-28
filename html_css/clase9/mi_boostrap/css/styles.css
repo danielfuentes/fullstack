@@ -1,0 +1,4 @@
+.chevrolet:hover::after{
+    content: url(../imagenes/logo_chevrolet.jpg);
+    
+}

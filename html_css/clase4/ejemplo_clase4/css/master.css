@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/fondo.png);
+    background-attachment: fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+p{
+   
+    color: red;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+}
+
+.sociales a{
+    text-decoration: none;
+}
+
+
+.destacado{
+    font-family: fantasy;
+    font-size: 22px;
+    color: white;
+    background-color: rgba(151, 107, 255, 0.8);
+    text-align: justify;
+}
+
+/*Aquí le incorporo el CSS para el archivo Galeria.html 
+Clase 4*/
+
+.encabezado{
+    background: cornflowerblue;
+}
+.enlace{
+    padding: 10px;
+    width: 300px;
+    float: left;
+    background: aqua;
+}
+.imagenes{
+    width: 630px;
+    float: right;
+    overflow: hidden;
+    background: gray;
+    
+}
+.piedepagina{
+    clear: both;
+    padding: 10px;
+    text-align: center;
+    background: yellowgreen;
+}
+
+.container .encabezado .piedepagina .seccion-contenedor{
+    width: 960px;
+}
+
+a .efecto:hover{
+    border: solid 2px red;
+    border-radius: 50%;
+}

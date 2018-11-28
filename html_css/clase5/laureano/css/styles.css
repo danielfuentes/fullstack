@@ -1,0 +1,169 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(../images/bg-2.png);
+	
+	font-family: sans-serif, Verdana, Tahoma;
+}
+
+
+/*Este sería el que contiene a toda nuestra pagina web*/
+
+.contenedor {
+	width: 960px;
+	margin: 0 auto;
+}
+
+header{
+	width: 960px;
+	top:40px;
+	width: 960px;
+	z-index: 50;
+	/*Esto es para que se quede fijo arriba cuando uno hace scroll*/
+	position: fixed;
+}
+
+
+div {
+	/*Laureano, este fondo es mejor que lo coloques en el body*/
+	/*background-image:url("../images/bg-2.png");*/
+	/*background-repeat: repeat;*/
+	/*width: 960px;*/
+}
+
+/*Aqui no es necesario colocar el img ya que tienes una clase creada*/
+/*Invocas a la clase y listo lo tenias asi ime.logo*/
+.logo {
+	/*Laureano, aquí es mejor colocarle posotion: absolute*/
+	/*Para que tome las coordas de referencia del elemento padre*/
+	/*Que en este caso es el body*/
+	/*position: relative;*/
+	position: absolute;
+	left: -40px;
+	bottom: 0px;
+	
+
+	
+}
+
+nav ul {
+	background-color: #ef4c27;
+	/*Esta medida no esnecesaria ya que esta toma las medidas del padre*/
+	/*width: 90%;*/
+	padding:15px;
+	/*Aquí no es necesario colocarle position, ya que con colocarle*/
+	/*display  inline-block que se le coloca al padre contenedor y estaria listo*/
+	/*position: relative;*/
+	/*display: inline-block;*/
+	overflow: hidden;
+	/*background-color: rgb(239, 76, 39);*/
+	
+
+}
+
+div ul {
+	font-family: sans-serif;
+	color: white;
+	list-style-type: none;
+	text-shadow: 1px 1px black;
+	/*Esto hace que desplace a la derecha los li del ul*/
+	padding-left: 150px;
+
+}
+/*Tal como lo estas trabajando debes darle la ruta completa*/
+/*A lo que quieres darle estilo*/
+/*Tu lo tienes div ul y debería ser div ul li*/
+div ul li {
+	/*Esto no es necesario, ya que esto está dentro de un padre*/
+	/*padding:10px 15px;*/
+	display: inline-block;
+	padding: 10px;
+	/*position: relative;*/
+	/*margin-right: 30px;*/*/
+	/*float: left;*/
+	/*margin-right: 30px;*/
+	
+
+
+}
+
+div ul li:hover{
+	text-decoration: underline;
+
+}
+
+main {
+	background-color: white;
+	/*Aquí debes estar atento con las medidas, ojo si vas a trabajar por px o por %*/
+	/*Esta medida no es necesaria ya que estas dentro de un contenedor*/
+	/*width: 90%;*/
+	background-color: #fff;
+	padding-top: 10px;
+	/*Esto hace que evite disponer una barra de desplazamiento*/
+	overflow: hidden;
+	margin-top: 170px;	
+}
+
+section article{
+	position: relative;
+	margin: 10px;
+	width: 300px;
+	float: left
+	/*No es necesaria colocarlo ya que trabajamos con position relative*/
+	/*Y ademas lo colocamos a flotar a la izquierda*/
+	/*display: inline-block;*/
+}
+
+/*No es necesario ya que le di las dimensiones al elemento padre*/
+/*section img {
+	width: 265px;
+	margin: 10px;
+}
+*/
+
+/*le incorpore las propiedadesal a la clase boton1*/
+.boton1 {
+	/*le coloque position obsolute para que tomara las dimensiones dle padre contenedor que es el div*/
+
+	position: absolute;
+	/*Para que tome desde la posición del padre div 10px*/
+	bottom: 10%;
+	text-decoration: none;
+	color: #fff;
+	/*Esto es para que el texto lo coloque en mayusculas*/
+	text-transform: uppercase;
+	background-color: rgba(255, 0, 0, 0.8);
+	padding: 10px 12px;
+	left: 33%;
+}
+
+.boton1:hover{
+	transform: scale(1,1.2);
+}
+
+/*Aquí coloco las propiedades para la imagen bandera la pequeña de arriba de cada artículo*/
+.imgpequena {
+	position: absolute;
+	top:0;
+	right:20px;
+}
+
+/*Laureano Falta el título en cada cuadro del producto (Nombre del Producto y el hover en las opcines del menu*/
+/*Y claro colocar las imagenes pequeñas a los demas artículos*/
+/*Esta clase no la vi asignada a ningún element en el html?*/
+/*.p01{
+	position: relative;
+	bottom: 50px;
+}
+*/
+/*button {
+
+	position: relative;
+	z-index: 10;
+	bottom: 20px;
+	right: 150px;
+}*/
+
+
