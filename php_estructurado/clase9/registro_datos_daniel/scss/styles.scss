@@ -1,0 +1,16 @@
+// Importamos los archivos de SASS que vamos a compilar
+
+// 1. Variables (siempre van de 1ero)
+@import '_variables';
+
+// 2. Mixins (siempre van de 2do)
+@import '_mixins';
+
+// 3. Reset (para poder eliminar los estilos default del browser)
+@import '_reset';
+
+// 4. Layout (los estilos de nuestra estructura principal)
+@import '_layout';
+
+// 5. Media-Queries (los media-queries siempre van al final)
+@import '_media-queries';

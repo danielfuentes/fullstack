@@ -1,0 +1,406 @@
+/*************************************/
+/*=========     GLOBAL     =========*/
+/***********************************/
+%contenedores{
+	padding: 100px 0;
+}
+
+.section-title{
+	font: 700 40px $third-font;
+	margin: 0;
+	color: #fff;
+	text-transform: uppercase;
+	+ p{
+		font: 400 italic $fourth-font;
+		margin: 10px 0 75px;
+	}
+	&.white{
+		color: #fff;
+		+ p{
+			color: #fff;
+		}
+	}
+}
+
+/*************************************/
+/*=========     HEADER     =========*/
+/***********************************/
+.navbar-default{
+	background-color: #fff;
+	border: none;
+
+	.navbar-brand{
+		color: $main-color;
+		font-family: $second-font;
+		padding: 0;
+		height: auto;
+		&:hover,
+		&:active,
+		&:focus{
+			color: $main-color !important;
+		}
+	}
+
+	.navbar-toggle{
+		border: none;
+		background-color: $main-color;
+		color: #fff;
+		&:hover,
+		&:active,
+		&:focus{
+			background-color: $main-color !important;
+		}
+	}
+
+	.navbar-nav{
+		> li{
+			> a{
+				font-family: $third-font;
+				color: #ec2029;
+				text-transform: uppercase;
+				&:hover,
+				&:active,
+				&:focus{
+				color: #fed136 !important;
+				}
+			}
+		}
+		> .active{
+			> a{
+				color: #fed136;
+				background-color: transparent !important;
+			}
+		}
+	}
+}
+
+.navbar-right{
+    margin-top: 30px;
+}
+
+
+
+/*************************************/
+/*=========     BANNER     =========*/
+/***********************************/
+#banner{
+	background: url(../images/header-bg.jpg) center center/cover;
+}
+
+.intro-text{
+	padding: 100px 0 50px;
+	color: #fff;
+
+	h2{
+		font: 400 italic 22px/22px $fourth-font;
+		margin-bottom: 25px;
+	}
+	
+	h1{
+		font: 700 50px/50px $third-font;
+		text-transform: uppercase;
+		margin-bottom: 25px;
+	}
+
+	a{
+		background-color: $main-color;
+		color: #fff;
+		text-transform: uppercase;
+		font: 400 18px $third-font;
+		padding: 20px 40px;
+		@include b-ra(5px);
+		&:hover{
+			color: #fff;
+		}
+	}
+}
+
+
+/***************************************/
+/*=========     SERVICES     =========*/
+/*************************************/
+#services{
+	@extend %contenedores;
+	background-color: #fed136;
+
+	.glyphicon{
+		width: 115px;
+		height: 115px;
+		background-color: $main-color;
+		@include b-ra(50%);
+		line-height: 115px;
+		color: #fff;
+		font-size: 50px !important;
+
+		&:hover{
+			background-color: #fff;
+			color: #fed136;
+		}
+	}
+}
+
+.item-subtitle{
+	font-family: $third-font;
+	font-size: 20px;
+	+ p{
+		line-height: 25px;
+		margin-bottom: 30px;
+	}
+}
+
+.parra{
+	color: #fff;
+}
+
+
+/****************************************/
+
+/*=========     PROMOCIONES    =========*/
+
+/**************************************/
+
+//.cuadrado{
+//	width:33%;
+//	height:120px;
+//	background: orange;}
+
+#promos{
+
+    @extend %contenedores;
+    background: url(../images/promos/fondo-promo.jpg) no-repeat center center/cover;
+
+}
+
+.promos-item{
+    margin: 0 auto 40px;
+    max-width: 400px;
+    figure{
+
+        position: relative;
+
+        div{
+
+            position: absolute;
+
+            left: 0;
+
+            top: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            background-color: rgba(338, 292, 217, 0.2);
+
+            opacity: 0;
+
+            @include ttion(500ms);
+
+            span{
+
+                position: absolute;
+
+                left: 50%;
+
+                top: 50%;
+
+                color: #fff;
+
+                font-size: 50px;
+
+                transform: translate(-50%,-50%) scale(0);
+
+                @include ttion(300ms);
+
+            }
+
+        }
+
+        &:hover{
+
+            div{
+
+                opacity: 1;
+
+                span{
+
+                    transform: translate(-50%,-50%) scale(1);
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.promos-caption{
+    padding: 20px 0;
+
+    h4{
+
+        font-family: $third-font;
+        color: #fff;
+        margin: 0;
+
+    }
+
+    p{
+
+        font-family: $fourth-font;
+        color: #fff;
+        font-style: italic;
+
+        font-size: 16px;
+
+    }
+
+}
+
+
+/************************************/
+/*=========     ABOUT     =========*/
+/**********************************/
+#about{
+	@extend %contenedores;
+	background: url(../images/promos/burger2.jpg) no-repeat center center/cover;
+	min-height: 400px;
+}
+
+.parra-nosotros{
+	width: 60%;
+	margin: 0 auto !important;
+	color: #fff;
+	margin-top: 60px !important;
+}
+
+
+/***********************************/
+/*=========     TEAM     =========*/
+/*********************************/
+#team{
+	@extend %contenedores;
+	background-color: $third-color;
+}
+
+.team-member{
+	margin-bottom: 40px;
+	.item-subtitle{
+		margin-bottom: 0;
+		+ p{
+			line-height: 20px;
+			margin-bottom: 10px;
+		}
+	}
+
+	a{
+		display: block;
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		background-color: #333;
+		color: #fff;
+		font-size: 20px;
+		@include ttion(600ms);
+		@include b-ra(50%);
+		&:hover{
+			@include spin(360deg);
+			background-color: $main-color;
+		}
+	}
+}
+
+.team-img{
+	width: 230px;
+	margin: auto;
+	border: solid 8px #fff;
+	overflow: hidden;
+	@include b-ra(50%);
+}
+
+.txt-large{
+	font-size: 17px;
+	line-height: 27px;
+}
+
+
+/**************************************/
+/*=========     CONTACT     =========*/
+/************************************/
+#contact{
+	@extend %contenedores;
+	background: url(../images/map-image.png) no-repeat center 100px #222;
+}
+
+#contact-form{
+	.form-control{
+		padding: 0 20px;
+		font-family: $third-font;
+		height: 65px;
+		margin-bottom: 20px;
+		font-size: 16px;
+	}
+	textarea{
+		&.form-control{
+			padding: 20px;
+			height: ((65*3)+(20*2))*1px;
+		}
+	}
+	.btn-lg{
+		background-color: $main-color;
+		padding: 20px 30px;
+		color: #fff;
+		font-family: $third-font;
+		@include b-ra(8);
+		&:hover{
+			background-color: darken($main-color,15);
+		}
+	}
+}
+
+
+
+/************************************/
+/*=========     FOOTER     =========*/
+/************************************/
+footer{
+	padding: 50px 0;
+	font-family: $third-font;
+	.list-inline{
+		margin: 0;
+	}
+}
+
+.social-links{
+	a{
+		display: block;
+		width: 40px;
+		height: 40px;
+		background-color: #222;
+		text-align: center;
+		line-height: 40px;
+		margin: 20px 0;
+		font-size: 19px;
+		color: #fff;
+		@include b-ra(50%);
+		@include ttion(600ms);
+		&:hover{
+			@include spin(360deg);
+			background-color: $main-color;
+			color: #222;
+		}
+	}
+}
+
+.footer-links{
+	a{
+		color: $main-color;
+		text-decoration: underline;
+		&:hover{
+			color: #222;
+		}
+	}
+}

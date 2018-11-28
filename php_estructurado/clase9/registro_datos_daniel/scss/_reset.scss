@@ -1,0 +1,31 @@
+/* CSS Document  */
+/* Project name: TP Bootstrap */
+/* File name: styles.css */
+/* Description: Hoja de estilos global */
+/* Creation date: Agosto 2018 */
+/* Author: MSc. Angel Daniel Fuentes */
+/* Author's eMail: dfuentes@digitalhouse.com */
+
+/********** FONTS (Google-fonts) **********/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+//font-family: 'Roboto Slab'
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+//font-family: 'Kaushan Script'
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+//font-family: 'Montserrat'
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic);
+//font-family: 'Droid Serif';
+
+body{
+	font-family: $main-font;
+	margin: 0;
+}
+
+figure{
+	margin: 0;
+	line-height: 0;
+}
+
+a{
+	outline: none !important;
+}

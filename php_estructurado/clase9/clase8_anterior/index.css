@@ -1,0 +1,8 @@
+#formContainer {
+  height: 100%;
+}
+
+#termsConditionModal .terms-text {
+  max-height: 60%;
+  overflow: auto;
+}

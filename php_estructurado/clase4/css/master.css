@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.php{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    margin: 1%;
+}
+.fotos img{
+    width: 25%;
+    height: auto;
+    position: relative;
+    top: 50px;
+    text-align: center;    
+    border: solid 5px red;
+    border-radius: 50%;
+}

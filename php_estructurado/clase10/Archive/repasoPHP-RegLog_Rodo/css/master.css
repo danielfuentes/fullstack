@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+li a {
+    text-decoration-style: none;
+    color: #fff;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+header {
+    margin-top: 50px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.btn-registro {
+    margin: 20px;
+}

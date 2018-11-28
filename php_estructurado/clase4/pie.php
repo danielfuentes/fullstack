@@ -1,0 +1,1 @@
+<h2>Esto es el el pie de la página</h2>

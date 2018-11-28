@@ -1,0 +1,47 @@
+/******************************************/
+/*=========     MEDIA-QUERIES    =========*/
+/******************************************/
+@media (min-width: 768px){
+	// version SM
+
+	.time-line{
+		&::before{
+			left: 50%;
+		}
+		li:nth-child(even){
+			@include clearfix;
+			.time-line-text{
+				float: right;
+				text-align: left;
+				padding: 0 50px 0 20px;
+			}
+		}
+	}
+
+	.time-line-img{
+		width: 120px;
+		height: 120px;
+		left: 50%;
+		margin-left: -60px;
+	}
+
+	.time-line-text{
+		width: 40%;
+		text-align: right;
+		padding: 0 20px 0 50px;
+	}
+
+}
+
+
+
+
+
+@media (min-width: 992px){
+	// version MD
+
+	.intro-text{
+		padding: 250px 0 100px;
+	}
+
+}
